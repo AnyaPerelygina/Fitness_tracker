@@ -6,16 +6,12 @@
 $color-default-black:               #000000;
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
+$color-blue-violet:                 #7711dd;
+$color-amber:                       #ffbd12;
+$color-tomato:                      #fa6648;
+$color-light-pink:                  #ffb0bc;
+$color-blue-violet-light:           #962eff;
 
-// Project palette
-// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
-
-$color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
-
-// Gradient
-
-$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
 // Typography
 // ---------------------------------
@@ -44,10 +40,8 @@ $trans-600:                         0.6s $tf-default;
 // ---------------------------------
 
 $vp-320:                            320px;
-$vp-375:                            375px;
 $vp-768:                            768px;
-$vp-1024:                           1024px;
-$vp-1280:                           1280px;
+$vp-1200:                           1200px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
 

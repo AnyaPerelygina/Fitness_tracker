@@ -7,7 +7,7 @@
     <meta name="description" content="The best fitness tracker">
     <title>Fitness tracker</title>
     <link rel="preload" href="fonts/PermanentMarker-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Montserrat - Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header class="header">
         <div class="header__wrapper">
           <a class="header__logo" href="index.html">
             <picture>
@@ -59,10 +59,13 @@
           <nav class="header__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="#about-us">About us</a>
+                <a class="nav__link" href="#about">About</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#tariff-plans">Tariff plans</a>
+                <a class="nav__link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Manual</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#feedback">Feedback</a>
@@ -99,7 +102,40 @@
           </div>
         </section>
       </main>
-      <footer>
+      <footer classs="footer">
+        <div class="footer__wrapper">
+          <a class="footer__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 320px)" srcset="img/logotype.png">
+              <img src="img/logotype.png" width="52" height="52" alt="Logotype Fitness tracker.">
+            </picture>
+          </a>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#about">About</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Manual</a>
+            </li>
+          </ul>
+          <div class="footer__buttons">
+            <button class="footer__button footer__button--left" type="button" aria-label="Download app.">
+              <svg class="footer__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#shape"></use>
+              </svg>
+              <span>Download</span>
+            </button>
+            <button class="footer__button footer__button--right" type="button" aria-label="Download app.">
+              <svg class="footer__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#play-market"></use>
+              </svg>
+              <span>Download</span>
+            </button>
+          </div>
+        </div>
       </footer>
     </div>
 

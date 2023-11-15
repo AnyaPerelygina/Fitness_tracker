@@ -2308,13 +2308,13 @@ button,
           column-gap: 9px;
 }
 .footer__button--left {
-  background-image: url("../../img/footer/footer-btn-left.webp");
+  background-image: url("../img/footer/footer-btn-left.webp");
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: 189px 52px;
 }
 .footer__button--right {
-  background-image: url("../../img/footer/footer-btn-right.webp");
+  background-image: url("../img/footer/footer-btn-right.webp");
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: 189px 52px;

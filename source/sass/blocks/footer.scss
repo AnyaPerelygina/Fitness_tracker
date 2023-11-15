@@ -1,9 +1,14 @@
+.footer {
+  background-color: $color-blue-violet;
+}
+
 .footer__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 42px 120px;
-  background-color: $color-blue-violet;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .footer__nav {

@@ -2085,6 +2085,10 @@ button,
   color: #15ab07;
 }
 
+.header {
+  background-color: #7711dd;
+}
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2097,7 +2101,8 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 19px 120px 19px 121px;
-  background-color: #7711dd;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .nav__list {
@@ -2126,6 +2131,10 @@ button,
 }
 
 .hero {
+  background-color: #7711dd;
+}
+
+.hero__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2133,8 +2142,9 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #7711dd;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero__text {
@@ -2221,6 +2231,10 @@ button,
   background-size: 177px 46px;
 }
 
+.footer {
+  background-color: #7711dd;
+}
+
 .footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2233,7 +2247,8 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 42px 120px;
-  background-color: #7711dd;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .footer__nav {
@@ -2461,16 +2476,21 @@ button,
 }
 
 .subscription {
+  background-color: #962eff;
+  color: #ffffff;
+}
+
+.subscription__wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  background-color: #962eff;
-  color: #ffffff;
   padding: 49px 146px 30px 120px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .subscription__text p {
@@ -2588,6 +2608,11 @@ button,
 
 .feedback {
   padding: 150px 120px 120px;
+}
+
+.feedback__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .feedback__title {

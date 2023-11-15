@@ -76,29 +76,31 @@
       </header>
       <main>
         <section class="hero">
-          <div class="hero__text">
-            <h1 class="hero__title">The best<br> fitness tracker!</h1>
-            <p>Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat ea exercitation.</p>
-            <div class="hero__buttons">
-              <button class="hero__button hero__button--left" type="button" aria-label="Download app.">
-                <svg class="hero__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
-                  <use href="img/sprite.svg#shape"></use>
-                </svg>
-                <span>Download</span>
-              </button>
-              <button class="hero__button hero__button--right" type="button" aria-label="Download app.">
-                <svg class="hero__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
-                  <use href="img/sprite.svg#play-market"></use>
-                </svg>
-                <span>Download</span>
-              </button>
+          <div class="hero__wrapper">
+            <div class="hero__text">
+              <h1 class="hero__title">The best<br> fitness tracker!</h1>
+              <p>Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat ea exercitation.</p>
+              <div class="hero__buttons">
+                <button class="hero__button hero__button--left" type="button" aria-label="Download app.">
+                  <svg class="hero__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#shape"></use>
+                  </svg>
+                  <span>Download</span>
+                </button>
+                <button class="hero__button hero__button--right" type="button" aria-label="Download app.">
+                  <svg class="hero__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#play-market"></use>
+                  </svg>
+                  <span>Download</span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="hero__img">
-            <picture>
-              <source media="(min-width: 320px)" srcset="img/app-hero.webp">
-              <img src="img/app-hero.png" width="992" height="952" alt="Prototype Fitness tracker.">
-            </picture>
+            <div class="hero__img">
+              <picture>
+                <source media="(min-width: 320px)" srcset="img/app-hero.webp">
+                <img src="img/app-hero.png" width="992" height="952" alt="Prototype Fitness tracker.">
+              </picture>
+            </div>
           </div>
         </section>
         <section class="about" id="#about">
@@ -158,63 +160,67 @@
           </div>
         </section>
         <section class="subscription">
-          <div class="subscription__text">
-            <h2 class="subscription__title">Start training already on your watch</h2>
-            <p>
-              Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat. 
-              Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat.
-            </p>
-            <div class="subscription__form form">
-              <form action="https://echo.htmlacademy.ru/" method="post" novalidate>
-                <div class="form__email" data-validate-type="email" data-on-input-validate data-required>
-                  <label class="visually-hidden" for="email">Email</label>
-                  <input placeholder="Email" id="Email" type="email" name="user-email" aria-invalid="true" required>
-                </div>
-                <button class="form__button" type="submit">Let’s GO!</button>
-              </form>
+          <div class="subscription__wrapper">
+            <div class="subscription__text">
+              <h2 class="subscription__title">Start training already on your watch</h2>
+              <p>
+                Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat. 
+                Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat.
+              </p>
+              <div class="subscription__form form">
+                <form action="https://echo.htmlacademy.ru/" method="post" novalidate>
+                  <div class="form__email" data-validate-type="email" data-on-input-validate data-required>
+                    <label class="visually-hidden" for="email">Email</label>
+                    <input placeholder="Email" id="Email" type="email" name="user-email" aria-invalid="true" required>
+                  </div>
+                  <button class="form__button" type="submit">Let’s GO!</button>
+                </form>
+              </div>
             </div>
-          </div>
-          <div class="form__img">
-            <picture>
-              <source media="(min-width: 320px)" srcset="img/watch.webp">
-              <img src="img/watch.png" width="452" height="528" alt="Prototype Fitness tracker on fitnesswatch.">
-            </picture>
+            <div class="form__img">
+              <picture>
+                <source media="(min-width: 320px)" srcset="img/watch.webp">
+                <img src="img/watch.png" width="452" height="528" alt="Prototype Fitness tracker on fitnesswatch.">
+              </picture>
+            </div>
           </div>
         </section>
         <section class="feedback">
-          <h2 class="feedback__title">Stories of our users</h2>
-          <div class="feedback__list">
-            <div class="feedback__card">
-              <picture>
-                <source media="(min-width: 320px)" srcset="img/stories-card/stories-card-green.webp">
-                <img src="img/stories-card/stories-card-green.webp" width="380" height="265" alt="Сover card.">
-              </picture>
-              <h3 class="feedback__card-title">Stories of our users</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <data>17.10.20</data>
-            </div>
-            <div class="feedback__card">
-              <picture>
-                <source media="(min-width: 320px)" srcset="img/stories-card/stories-card-purple.webp">
-                <img src="img/stories-card/stories-card-green.webp" width="380" height="265" alt="Сover card.">
-              </picture>
-              <h3 class="feedback__card-title">Stories of our users</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <data>17.10.20</data>
-            </div>
-            <div class="feedback__card">
-              <picture>
-                <source media="(min-width: 320px)" srcset="img/stories-card/stories-card-green.webp">
-                <img src="img/stories-card/stories-card-green.webp" width="380" height="265" alt="Сover card.">
-              </picture>
-              <h3 class="feedback__card-title">Stories of our users</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <data>17.10.20</data>
+          <div class="feedback__wrapper">
+            <h2 class="feedback__title">Stories of our users</h2>
+            <div class="feedback__list">
+              <div class="feedback__card">
+                <picture>
+                  <source media="(min-width: 320px)" srcset="img/stories-card/stories-card-green.webp">
+                  <img src="img/stories-card/stories-card-green.webp" width="380" height="265" alt="Сover card.">
+                </picture>
+                <h3 class="feedback__card-title">Stories of our users</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <data>17.10.20</data>
+              </div>
+              <div class="feedback__card">
+                <picture>
+                  <source media="(min-width: 320px)" srcset="img/stories-card/stories-card-purple.webp">
+                  <img src="img/stories-card/stories-card-green.webp" width="380" height="265" alt="Сover card.">
+                </picture>
+                <h3 class="feedback__card-title">Stories of our users</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <data>17.10.20</data>
+              </div>
+              <div class="feedback__card">
+                <picture>
+                  <source media="(min-width: 320px)" srcset="img/stories-card/stories-card-green.webp">
+                  <img src="img/stories-card/stories-card-green.webp" width="380" height="265" alt="Сover card.">
+                </picture>
+                <h3 class="feedback__card-title">Stories of our users</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <data>17.10.20</data>
+              </div>
             </div>
           </div>
         </section>
       </main>
-      <footer classs="footer">
+      <footer class="footer">
         <div class="footer__wrapper">
           <a class="footer__logo" href="index.html">
             <picture>

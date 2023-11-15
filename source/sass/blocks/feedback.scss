@@ -1,5 +1,10 @@
 .feedback {
-    padding: 150px 120px 120px;
+  padding: 150px 120px 120px;
+}
+
+.feedback__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .feedback__title {

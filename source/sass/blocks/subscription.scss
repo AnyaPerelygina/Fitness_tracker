@@ -1,10 +1,15 @@
 .subscription {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   background-color: $color-blue-violet-light;
   color: $color-default-white;
+}
+
+.subscription__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 49px 146px 30px 120px;
   align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .subscription__text {

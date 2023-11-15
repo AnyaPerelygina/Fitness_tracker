@@ -1,6 +1,8 @@
 import Swiper from '../vendor/swiper';
 
 const sliderAbout = document.querySelector('.about__swiper');
+const buttonNext = document.querySelector('.about__button-next');
+const buttonPrev = document.querySelector('.about__button-prev');
 let mySwiper;
 
 const createAboutSlider = () => {
@@ -11,12 +13,9 @@ const createAboutSlider = () => {
       spaceBetween: 30,
       allowTouchMove: true,
       init: true,
-      pagination: {
-        el: '.about__pagination',
-        type: 'bullets',
-        centeredSlides: true,
-        slidesPerView: 1,
-        clickable: true,
+      navigation: {
+        nextEl: buttonNext,
+        prevEl: buttonPrev,
       },
       breakpoints: {
         320: {
@@ -47,6 +46,5 @@ const handleResize = () => {
 };
 
 window.addEventListener('resize', handleResize);
-
 
 export {createAboutSlider, handleResize};

@@ -2331,6 +2331,7 @@ button,
   text-align: center;
   padding: 80px 0 80px;
   overflow: hidden;
+  position: relative;
 }
 .about__container p {
   font-size: 18px;
@@ -2376,39 +2377,38 @@ button,
   margin-bottom: 46px;
 }
 
-.about__slide:first-child,
-.about__slide:nth-child(4n) {
-  background-color: #fa6648;
-  color: #ffffff;
-}
-
-.about__slide:nth-child(2),
-.about__slide:nth-child(2n+3) {
-  background-color: #ffb0bc;
-  color: #ffffff;
-}
-
-.about__slide:nth-child(3n) {
-  background-color: #ffbd12;
-  color: #ffffff;
-}
-
-.about__slide:last-child {
-  color: #000000;
-}
-
 .about__slide {
-  max-width: 80%;
+  max-width: 340px;
   min-height: 183px;
   border-radius: 10px;
   border: 2px solid #000000;
   border-bottom: 6px solid #000000;
   text-align: left;
+  color: #ffffff;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
   padding: 25px 23px 32px 20px;
+}
+.about__slide--1 {
+  background-color: #fa6648;
+}
+.about__slide--2 {
+  background-color: #ffb0bc;
+}
+.about__slide--3 {
+  background-color: #ffbd12;
+}
+.about__slide--4 {
+  background-color: #fa6648;
+}
+.about__slide--5 {
+  background-color: #ffb0bc;
+}
+.about__slide--6 {
+  background-color: #ffbd12;
+  color: #000000;
 }
 .about__slide p {
   font-size: 16px;
@@ -2431,28 +2431,31 @@ button,
   padding: 0 0 0 10px;
 }
 
-.swiper-pagination-bullet {
-  width: 18px;
-  height: 18px;
-  background-color: transparent;
-  border: 2px solid #000000;
-  opacity: 1;
+.about__button {
+  font-family: "Permanent Marker", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #000000;
+  cursor: pointer;
 }
-.swiper-pagination-bullet:focus-visible {
-  opacity: 0.5;
+
+.about__button-prev,
+.about__button-next {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.about__button-prev:hover, .about__button-prevfocus, .about__button-prev:focus-visible,
+.about__button-next:hover,
+.about__button-nextfocus,
+.about__button-next:focus-visible {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
   outline: none;
 }
-
-.swiper .swiper-pagination-bullet-active {
-  background: #ffbd12;
-}
-
-.about__pagination {
-  gap: 7px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.about__button-prev:active,
+.about__button-next:active {
+  opacity: 0.5;
 }

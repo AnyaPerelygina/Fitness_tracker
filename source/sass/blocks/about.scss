@@ -4,6 +4,7 @@
   text-align: center;
   padding: 80px 0 80px;
   overflow: hidden;
+  position: relative;
 
   p {
     font-size: 18px;
@@ -45,38 +46,43 @@
   margin-bottom: 46px;
 }
 
-.about__slide:first-child,
-.about__slide:nth-child(4n) {
-  background-color: $color-tomato;
-  color: $color-default-white;
-}
-
-.about__slide:nth-child(2),
-.about__slide:nth-child(2n+3) {
-  background-color: $color-light-pink;
-  color: $color-default-white;
-}
-
-.about__slide:nth-child(3n) {
-  background-color: $color-amber;
-  color: $color-default-white;
-}
-
-.about__slide:last-child {
-  color: $color-default-black;
-}
-
 .about__slide {
-  max-width: 80%;
+  max-width: 340px;
   min-height: 183px;
   border-radius: 10px;
   border: 2px solid $color-default-black;
   border-bottom: 6px solid $color-default-black;
   text-align: left;
+  color: $color-default-white;
 
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 25px 23px 32px 20px;
+
+  &--1 {
+    background-color: $color-tomato;
+  }
+
+  &--2 {
+    background-color: $color-light-pink;
+  }
+
+  &--3 {
+    background-color: $color-amber;
+  }
+
+  &--4 {
+    background-color: $color-tomato;
+  }
+
+  &--5 {
+    background-color: $color-light-pink;
+  }
+
+  &--6 {
+    background-color: $color-amber;
+    color: $color-default-black;
+  }
 
   p {
     font-size: 16px;
@@ -99,25 +105,29 @@
   padding: 0 0 0 10px;
 }
 
-.swiper-pagination-bullet {
-  width: 18px;
-  height: 18px;
-  background-color: transparent;
-  border: 2px solid $color-default-black;
-  opacity: 1;
+.about__button {
+  font-family: $ff-permanent;
+  font-size: 30px;
+  font-weight: 900;
+  color: $color-default-black;
+  cursor: pointer;
+}
 
+.about__button-prev,
+.about__button-next {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover,
+  &focus,
   &:focus-visible {
-    opacity: 0.5;
+    transform: scale(1.05);
     outline: none;
   }
-}
 
-.swiper .swiper-pagination-bullet-active {
-  background: $color-amber;
-}
-
-.about__pagination {
-  gap: 7px;
-  display: flex;
-  justify-content: center;
+  &:active {
+    opacity: 0.5;
+  }
 }

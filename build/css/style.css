@@ -2585,3 +2585,65 @@ button,
   background-image: url("../img/subscription-form/subscription-btn.webp");
   background-size: 189px 48px;
 }
+
+.feedback {
+  padding: 150px 120px 120px;
+}
+
+.feedback__title {
+  font-family: "Permanent Marker", "Arial", sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48.5px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0 0 60px;
+  padding: 0;
+}
+
+.feedback__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.feedback__card {
+  max-width: 380px;
+}
+.feedback__card p {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.45px;
+  margin: 0;
+  padding: 0 0 15px;
+}
+.feedback__card data {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.4%;
+  letter-spacing: 0.5px;
+}
+
+.feedback__card-title {
+  margin: 0;
+  padding: 25px 0 5px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.625px;
+}

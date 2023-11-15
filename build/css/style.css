@@ -2452,13 +2452,15 @@ button,
   font-weight: 900;
   color: #000000;
   cursor: pointer;
+  position: relative;
 }
 
 .about__button-prev,
 .about__button-next {
   background-color: transparent;
-  border: none;
-  border-radius: 5px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 10px 10px 5px;
   cursor: pointer;
 }
 .about__button-prev:hover, .about__button-prevfocus, .about__button-prev:focus-visible,

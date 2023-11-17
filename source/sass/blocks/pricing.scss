@@ -107,25 +107,25 @@
 
 .pricing__item {
   &--free {
-    background-image: url('../../img/subscription/subscription-card-red.webp');
+    background-image: url('../img/subscription/subscription-card-red.webp');
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   &--basic {
-    background-image: url('../../img/subscription/subscription-card-green.webp');
+    background-image: url('../img/subscription/subscription-card-green.webp');
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   &--advenced {
-    background-image: url('../../img/subscription/subscription-card-purple.webp');
+    background-image: url('../img/subscription/subscription-card-purple.webp');
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   &--mostAdvenced {
-    background-image: url('../../img/subscription/subscription-card-yellow.webp');
+    background-image: url('../img/subscription/subscription-card-yellow.webp');
     background-repeat: no-repeat;
     background-size: contain;
   }

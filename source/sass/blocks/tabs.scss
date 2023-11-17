@@ -1,0 +1,36 @@
+.tabs {
+    max-width: 100%;
+  }
+  
+  .tabs__controls {
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+  }
+  
+  .tabs__control {
+    cursor: pointer;
+  }
+  
+  .tabs__content {
+    height: max-content;
+    transition: height 0.3s;
+  }
+  
+  .tabs__element {
+    width: 100%;
+  
+    p {
+      margin: 0;
+    }
+  }
+  
+  .tabs--unset .tabs__content {
+    height: 100px;
+  }
+  
+  .tabs--unset .tabs__element {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }

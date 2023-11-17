@@ -1455,6 +1455,48 @@ button,
   outline: none;
 }
 
+[data-tabs=parent] {
+  overflow: hidden;
+}
+[data-tabs=parent].no-transition > [data-tabs=control],
+[data-tabs=parent].no-transition > [data-tabs=content],
+[data-tabs=parent].no-transition > [data-tabs=element] {
+  -webkit-transition: none;
+  transition: none;
+}
+[data-tabs=parent].no-transition-global [data-tabs=control],
+[data-tabs=parent].no-transition-global [data-tabs=content],
+[data-tabs=parent].no-transition-global [data-tabs=element] {
+  -webkit-transition: none;
+  transition: none;
+}
+
+[data-tabs=parent] [data-tabs=content] {
+  position: relative;
+}
+
+[data-tabs=element] {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+  transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
+}
+
+[data-tabs=element].for-load {
+  position: static;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: none;
+  transition: none;
+}
+
+[data-tabs=element].is-active {
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -2357,6 +2399,7 @@ button,
   max-width: 510px;
   margin: 0 auto;
   padding: 0 15px 60px 15px;
+  color: #474a57;
 }
 
 .about__title {
@@ -2434,6 +2477,7 @@ button,
   padding: 10px 0 0 0;
   -ms-grid-column-span: 2;
   grid-column: span 2;
+  color: #ffffff;
 }
 
 .about__slide-title {
@@ -2655,6 +2699,7 @@ button,
   letter-spacing: 0.45px;
   margin: 0;
   padding: 0 0 15px;
+  color: #474a57;
 }
 .feedback__card data {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -2674,4 +2719,248 @@ button,
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 0.625px;
+}
+
+.card {
+  padding: 30px 30px 40px;
+  width: 278px;
+}
+
+.card__list {
+  margin: 30px 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.card__item {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.4%;
+  letter-spacing: 0.5px;
+}
+
+.card__button {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 0.45px;
+  padding: 17px 23px 18px;
+  width: 100%;
+  border: none;
+  background-image: url("../img/subscription/subscription-btn.webp");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 217px 51px;
+  cursor: pointer;
+}
+
+.pricing__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pricing__wrapper p {
+  color: #474a57;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.4%;
+  letter-spacing: 0.5px;
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+.pricing__title {
+  font-family: "Permanent Marker", "Arial", sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48.5px;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0 0 60px;
+}
+
+.pricing__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing__nav {
+  position: relative;
+  background-image: url("../img/subscription/tab-subscription.webp");
+  background-size: 277px 60px;
+  background-repeat: no-repeat;
+  margin: 0 0 50px;
+}
+.pricing__nav::before {
+  position: absolute;
+  content: "";
+  background-color: #000000;
+  opacity: 0.7;
+  left: 50%;
+  top: 1.5px;
+  height: 55px;
+  width: 2px;
+  z-index: 555;
+}
+
+.pricing__button {
+  border: none;
+  background-color: transparent;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.625px;
+  text-align: center;
+  cursor: pointer;
+}
+.pricing__button:first-child {
+  padding: 14px 31px;
+}
+.pricing__button:last-child {
+  padding: 14px 40px;
+}
+.pricing__button:hover, .pricing__buttonfocus, .pricing__button:focus-visible {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  outline: none;
+}
+.pricing__button:active {
+  opacity: 0.5;
+}
+
+.pricing__button.is-active {
+  color: #7711dd;
+}
+
+.pricing__content {
+  width: 1200px;
+}
+
+.pricing__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pricing__item--free {
+  background-image: url("../../img/subscription/subscription-card-red.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.pricing__item--basic {
+  background-image: url("../../img/subscription/subscription-card-green.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.pricing__item--advenced {
+  background-image: url("../../img/subscription/subscription-card-purple.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.pricing__item--mostAdvenced {
+  background-image: url("../../img/subscription/subscription-card-yellow.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.pricing__item h3 {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.4%;
+  letter-spacing: 0.5px;
+  margin: 0 0 20px;
+}
+.pricing__item span {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.45px;
+  margin: 0 0 30px;
+}
+
+.tabs {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .tabs__controls {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.tabs__control {
+  cursor: pointer;
+}
+
+.tabs__content {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+.tabs__element {
+  width: 100%;
+}
+.tabs__element p {
+  margin: 0;
+}
+
+.tabs--unset .tabs__content {
+  height: 100px;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }

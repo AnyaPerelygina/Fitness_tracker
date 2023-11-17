@@ -1,0 +1,152 @@
+.pricing__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    color: $color-blue-zodiac;
+    font-family: $ff-montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 145.4%;
+    letter-spacing: 0.5px;
+    padding: 0;
+    margin: 0 0 15px;
+  }
+}
+
+.pricing__title {
+  font-family: $ff-permanent;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48.5px;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0 0 60px;
+}
+
+.pricing__tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__nav {
+  position: relative;
+  background-image: url('../img/subscription/tab-subscription.webp');
+  background-size: 277px 60px;
+  background-repeat: no-repeat;
+  margin: 0 0 50px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $color-default-black;
+    opacity: 0.7;
+    left: 50%;
+    top: 1.5px;
+    height: 55px;
+    width: 2px;
+    z-index: 555;
+  }
+}
+
+.pricing__button {
+  border: none;
+  background-color: transparent;
+  font-family: $ff-montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.625px;
+  text-align: center;
+  cursor: pointer;
+
+  &:first-child {
+    padding: 14px 31px;
+  }
+
+  &:last-child {
+    padding: 14px 40px;
+  }
+
+  &:hover,
+  &focus,
+  &:focus-visible {
+    transform: scale(1.05);
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.pricing__button.is-active {
+  color: $color-blue-violet;
+}
+
+.pricing__content {
+  width: 1200px;
+}
+
+.pricing__list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pricing__item {
+  &--free {
+    background-image: url('../../img/subscription/subscription-card-red.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--basic {
+    background-image: url('../../img/subscription/subscription-card-green.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--advenced {
+    background-image: url('../../img/subscription/subscription-card-purple.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--mostAdvenced {
+    background-image: url('../../img/subscription/subscription-card-yellow.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  h3 {
+    font-family: $ff-montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 145.4%;
+    letter-spacing: 0.5px;
+    margin: 0 0 20px;
+  }
+
+  span {
+    font-family: $ff-montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.45px;
+    margin: 0 0 30px;
+  }
+}

@@ -13,6 +13,7 @@
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
+@import "global/data-tabs.scss";
 
 // Blocks
 // ---------------------------------
@@ -31,3 +32,6 @@
 @import "blocks/subscription.scss";
 @import "blocks/form.scss";
 @import "blocks/feedback.scss";
+@import "blocks/card.scss";
+@import "blocks/pricing.scss";
+@import "blocks/tabs.scss";

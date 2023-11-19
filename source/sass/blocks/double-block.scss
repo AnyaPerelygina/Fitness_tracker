@@ -1,0 +1,7 @@
+.double-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 113px;
+  padding: 80px 120px;
+  align-items: center;
+}

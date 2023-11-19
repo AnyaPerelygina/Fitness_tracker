@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {CustomSelect} from './vendor/select/custom-select';
 import {createAboutSlider} from './modules/about';
 import {initTabs} from './modules/tabs/init-tabs.js';
 
@@ -25,6 +26,8 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     createAboutSlider();
+    const select = new CustomSelect();
+    select.init();
   });
 });
 

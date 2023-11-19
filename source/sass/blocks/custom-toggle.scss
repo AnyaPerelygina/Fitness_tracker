@@ -5,8 +5,9 @@
   font-weight: 300;
 
   display: flex;
-  width: 500px;
+  max-width: 403px;
   padding: 14px 0 10px 36px;
+  color: $color-blue-zodiac;
 
   @media screen and (max-width: 767px) {
     padding: 14px 0 10px 0;
@@ -14,7 +15,7 @@
   }
 
   &:last-of-type {
-    padding: 14px 0 58px 36px;
+    padding: 22px 0 30px 0;
 
     @media screen and (max-width: 767px) {
       padding: 14px 0 58px 0;
@@ -34,13 +35,20 @@
   label {
     position: relative;
 
-    padding-left: 52px;
+    padding-left: 40px;
 
     cursor: pointer;
 
     span {
       margin-bottom: 0;
       margin-left: 0;
+      font-size: 16px;
+      color: $color-default-black;
+      font-family: $ff-montserrat;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 145.4%;
+      letter-spacing: 0.5px;
     }
   }
 
@@ -53,7 +61,8 @@
       width: 28px;
       height: 28px;
 
-      border: 1.5px solid #2c39f2;
+      border: 2px solid $color-default-black;
+      border-radius: 8px;
 
       transition: border 0.3s ease;
 
@@ -63,10 +72,7 @@
         top: 50%;
         left: 50%;
 
-        width: 20px;
-        height: 20px;
-
-        background-color: rgba(#2c39f2, 0);
+        background-color: transparent;
 
         transform: translate(-50%, -50%);
 
@@ -84,7 +90,7 @@
       width: 28px;
       height: 28px;
 
-      border: 1px solid #2c39f2;
+      border: 1px solid $color-default-black;
       border-radius: 50%;
 
       transition: border 0.3s ease;
@@ -109,10 +115,14 @@
   }
 
   input:checked + .custom-toggle__icon {
-    border: 1.5px solid #2c39f2;
+    border: 2px solid $color-default-black;
+    background-color: $color-amber;
 
     &::before {
-      background-color: #2c39f2;
+      width: 17px;
+      height: 21px;
+      background-image: url('data:image/svg+xml,\<svg width="35" height="43" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M1 3.5L3.94737 7L9 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>\</svg>');
+      background-repeat: no-repeat;
     }
   }
 

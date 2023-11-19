@@ -1,0 +1,48 @@
+.sign-in {
+  background-image: url('../img/user-form/form-background.webp');
+  background-repeat: no-repeat;
+  height: 550px;
+  padding: 40px 40px 44px;
+}
+
+.sign-in__tabs {
+  overflow: visible;
+}
+
+.sign-in__nav {
+  margin: 0 0 40px;
+}
+
+.sign-in__button {
+  font-family: $ff-montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.625px;
+  border: none;
+  background-color: transparent;
+  color: $color-default-black;
+}
+
+.sign-in__button.is-active {
+  color: $color-tomato;
+}
+
+.sign-in__button-submit {
+  font-family: $ff-montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 0.45px;
+  color: $color-default-white;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  background-image: url('../img/user-form/user-form-btn.webp');
+  background-size: 403px 50px;
+  width: 403px;
+  min-height: 50px;
+  cursor: pointer;
+}

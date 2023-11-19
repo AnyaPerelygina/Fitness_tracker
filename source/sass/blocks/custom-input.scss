@@ -3,11 +3,11 @@
   position: relative;
 
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
+  width: 403px;
+  padding: 0;
 
   @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
+    // padding: 4px 0 48px;
     width: 100%;
   }
 
@@ -24,12 +24,13 @@
     input,
     textarea {
       flex-grow: 1;
-      max-width: 300px;
-      min-height: 48px;
+      max-width: 403px;
+      min-height: 50px;
       margin-left: auto;
+      margin: 0 0 16px;
       padding: 10px;
 
-      border: 2px solid rgba(#000000, 0.2);
+      border: 2px solid $color-default-black;;
       border-radius: 5px;
       outline: none;
 
@@ -108,4 +109,19 @@
       color: #15ab07;
     }
   }
+}
+
+input::placeholder {
+  color: $color-default-black;
+  font-family: $ff-montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.4%;
+  letter-spacing: 0.5px;
+}
+
+input[name="Enter your email"]::placeholder,
+input[name="Enter your password"]::placeholder {
+  color: $color-blue-zodiac;
 }

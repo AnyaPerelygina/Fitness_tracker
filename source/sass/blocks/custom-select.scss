@@ -126,6 +126,13 @@
 
   &__item {
     padding: 5px;
+    color: $color-default-black;
+    font-family: $ff-montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 145.4%;
+    letter-spacing: 0.5px;
 
     outline: none;
     cursor: pointer;

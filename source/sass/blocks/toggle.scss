@@ -1,0 +1,52 @@
+.toggle {
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 48px;
+    padding: 0 6px 0 3px ;
+    margin: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    background-image: url('../../img/svg/burger-menu-ellipse.svg');
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+  
+    // &:active {
+    //   background-color: blue;
+    // }
+  
+    &:disabled {
+      // background-color: $color-transparent;
+      pointer-events: none;
+  }
+}
+  
+// .toggle.is-opened {
+//   background-color: blue;
+// }
+
+.toggle .toggle__closed {
+  display: none;
+  opacity: 0;
+}
+
+.toggle.is-opened .toggle__opened {
+  display: none;
+}
+
+.toggle.is-opened .toggle__closed {
+  display: inline;
+  opacity: 1;
+}

@@ -1276,7 +1276,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
-  background-color: #ffffff;
+  background-color: #7711dd;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -2060,6 +2060,13 @@ input[name="Enter your password"]::placeholder {
 }
 .custom-select__item {
   padding: 5px;
+  color: #000000;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.4%;
+  letter-spacing: 0.5px;
   outline: none;
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease;
@@ -2202,28 +2209,77 @@ input[name="Enter your password"]::placeholder {
 
 .header {
   background-color: #7711dd;
+  width: 100%;
+}
+
+.header.is-opened::before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  background-color: rgba(119, 17, 221, 0.2);
+  inset: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .header__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 19px 120px 19px 121px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 116px 20px;
+  grid-template-columns: 1fr 116px 20px;
+  padding: 19px 149px 19px 121px;
   margin: 0 auto;
   max-width: 1440px;
+  position: relative;
+}
+
+.header__logo {
+  width: 52px;
+  height: 52px;
+}
+
+.header__nav {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: 11px;
+  right: 112px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 2px solid #000000;
+  width: 230px;
+  padding: 60px 10px 10px 20px;
+  visibility: hidden;
+}
+
+.header.is-opened .header__nav {
+  visibility: visible;
+}
+
+.header.is-opened .social-list__icon {
+  color: #7711dd;
+}
+
+.header.is-opened .social-list {
+  margin: 0 0 0 -32px;
 }
 
 .nav__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  z-index: 2;
+}
+
+.nav.is-opened {
+  -webkit-transform: translate(0, 0) scale(1);
+      -ms-transform: translate(0, 0) scale(1);
+          transform: translate(0, 0) scale(1);
+  visibility: hidden;
+  position: absolute;
 }
 
 .social-list {
@@ -2237,12 +2293,65 @@ input[name="Enter your password"]::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 22px;
-     -moz-column-gap: 22px;
-          column-gap: 22px;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 0 -42px;
   padding: 0;
+  z-index: 2;
+}
+
+.social-list__icon {
+  color: #ffffff;
+}
+
+.toggle {
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 49px;
+  height: 48px;
+  padding: 0 6px 0 3px;
+  margin: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-image: url("../../img/svg/burger-menu-ellipse.svg");
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.toggle:hover, .toggle:focus, .toggle:focus-visible {
+  outline: none;
+}
+.toggle:disabled {
+  pointer-events: none;
+}
+
+.toggle .toggle__closed {
+  display: none;
+  opacity: 0;
+}
+
+.toggle.is-opened .toggle__opened {
+  display: none;
+}
+
+.toggle.is-opened .toggle__closed {
+  display: inline;
+  opacity: 1;
 }
 
 .hero {
@@ -2448,6 +2557,10 @@ input[name="Enter your password"]::placeholder {
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: 177px 52px;
+}
+
+.about {
+  background-color: #ffffff;
 }
 
 .about__container {
@@ -2728,6 +2841,7 @@ input[name="Enter your password"]::placeholder {
 
 .feedback {
   padding: 150px 120px 120px;
+  background-color: #ffffff;
 }
 
 .feedback__wrapper {
@@ -2837,6 +2951,10 @@ input[name="Enter your password"]::placeholder {
   background-color: transparent;
   background-size: 217px 51px;
   cursor: pointer;
+}
+
+.pricing {
+  background-color: #ffffff;
 }
 
 .pricing__wrapper {
@@ -3124,6 +3242,7 @@ input[name="Enter your password"]::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #ffffff;
 }
 
 .sign-in {

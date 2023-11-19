@@ -2,9 +2,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 22px;
+  column-gap: 32px;
 
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 0 -42px;
   padding: 0;
+  z-index: 2;
+}
+
+.social-list__icon {
+  color: $color-default-white;
 }

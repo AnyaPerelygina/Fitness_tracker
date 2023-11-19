@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {CustomSelect} from './vendor/select/custom-select';
+import {addToggleMenu} from './modules/header/toggle';
 import {createAboutSlider} from './modules/about';
 import {initTabs} from './modules/tabs/init-tabs.js';
 
@@ -14,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initTabs();
+  addToggleMenu();
 
   // Modules
   // ---------------------------------

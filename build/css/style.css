@@ -2328,7 +2328,7 @@ input[name="Enter your password"]::placeholder {
   border: none;
   outline: none;
   cursor: pointer;
-  background-image: url("../../img/svg/burger-menu-ellipse.svg");
+  background-image: url("../img/svg/burger-menu-ellipse.svg");
   background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;

@@ -7,7 +7,7 @@
   padding: 0;
 
   @media screen and (max-width: 767px) {
-    // padding: 4px 0 48px;
+    padding: 4px 0 48px;
     width: 100%;
   }
 
@@ -28,9 +28,11 @@
       min-height: 50px;
       margin-left: auto;
       margin: 0 0 16px;
-      padding: 10px;
+      // padding: 10px;
+      padding: 0;
 
-      border: 2px solid $color-default-black;;
+      // border: 2px solid $color-default-black;
+      border: none;
       border-radius: 5px;
       outline: none;
 
@@ -41,13 +43,13 @@
         width: 100%;
       }
 
-      &:hover {
-        border: 2px solid rgba(#000000, 0.5);
-      }
+      // &:hover {
+      //   border: 2px solid rgba(#000000, 0.5);
+      // }
 
-      &:focus {
-        border: 2px solid rgba(#000000, 0.8);
-      }
+      // &:focus {
+      //   border: 2px solid rgba(#000000, 0.8);
+      // }
     }
   }
 

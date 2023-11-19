@@ -2,9 +2,10 @@
   position: relative;
 
   width: 403px;
-  // padding: 14px 0 28px;
-  // margin: 0 0 44px 0;
-  padding: 0;
+  height: 50px;
+  padding: 14px 0 28px;
+  margin: 0 0 44px 0;
+  padding: 10px;
   margin: 0;
 
   color: $color-default-black;
@@ -77,25 +78,26 @@
     padding: 5px 10px;
 
     background-color: rgba(255, 255, 255, 0);
-    border: 2px solid $color-default-black;
+    // border: 2px solid $color-default-black;
+    border: none;
     border-radius: 5px;
     outline: none;
     cursor: pointer;
 
     transition: border 0.3s ease;
 
-    &:hover {
-      border: 2px solid rgba(0, 0, 0, 0.5);
-    }
+    // &:hover {
+    //   border: 2px solid rgba(0, 0, 0, 0.5);
+    // }
 
-    &:focus {
-      border: 2px solid rgba(0, 0, 0, 0.8);
-    }
+    // &:focus {
+    //   border: 2px solid rgba(0, 0, 0, 0.8);
+    // }
 
-    &:disabled {
-      pointer-events: none;
-      opacity: 0.3;
-    }
+    // &:disabled {
+    //   pointer-events: none;
+    //   opacity: 0.3;
+    // }
   }
 
   &__list {
@@ -108,17 +110,16 @@
     margin: 0;
     padding: 0;
     overflow-y: auto;
-
     list-style: none;
 
-    background-color: #ffffff;
-    border: 2px solid #000000;
+    background-color: $color-default-white;
+    border-top: 2px solid $color-default-black;
+    border-right: 2px solid $color-default-black;
+    border-bottom: 4px solid $color-default-black;
+    border-left: 2px solid $color-default-black;
     border-radius: 8px;
     transform: translateY(100%);
     visibility: hidden;
-    opacity: 0;
-
-    transform: translateY(100%);
     transition: visibility 0.3s ease, opacity 0.3s ease;
   }
 

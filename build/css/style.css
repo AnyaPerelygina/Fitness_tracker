@@ -1625,6 +1625,7 @@ button,
 @media screen and (max-width: 767px) {
   .custom-input,
 .custom-textarea {
+    padding: 4px 0 48px;
     width: 100%;
   }
 }
@@ -1661,8 +1662,8 @@ button,
   min-height: 50px;
   margin-left: auto;
   margin: 0 0 16px;
-  padding: 10px;
-  border: 2px solid #000000;
+  padding: 0;
+  border: none;
   border-radius: 5px;
   outline: none;
   -webkit-transition: border 0.3s ease;
@@ -1676,18 +1677,6 @@ button,
     max-width: unset;
     width: 100%;
   }
-}
-.custom-input label input:hover,
-.custom-input label textarea:hover,
-.custom-textarea label input:hover,
-.custom-textarea label textarea:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
-}
-.custom-input label input:focus,
-.custom-input label textarea:focus,
-.custom-textarea label input:focus,
-.custom-textarea label textarea:focus {
-  border: 2px solid rgba(0, 0, 0, 0.8);
 }
 @media screen and (max-width: 767px) {
   .custom-input__label,
@@ -1947,7 +1936,10 @@ input[name="Enter your password"]::placeholder {
 .custom-select {
   position: relative;
   width: 403px;
-  padding: 0;
+  height: 50px;
+  padding: 14px 0 28px;
+  margin: 0 0 44px 0;
+  padding: 10px;
   margin: 0;
   color: #000000;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -2037,22 +2029,12 @@ input[name="Enter your password"]::placeholder {
   height: 48px;
   padding: 5px 10px;
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #000000;
+  border: none;
   border-radius: 5px;
   outline: none;
   cursor: pointer;
   -webkit-transition: border 0.3s ease;
   transition: border 0.3s ease;
-}
-.custom-select__button:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
-}
-.custom-select__button:focus {
-  border: 2px solid rgba(0, 0, 0, 0.8);
-}
-.custom-select__button:disabled {
-  pointer-events: none;
-  opacity: 0.3;
 }
 .custom-select__list {
   position: absolute;
@@ -2065,14 +2047,15 @@ input[name="Enter your password"]::placeholder {
   overflow-y: auto;
   list-style: none;
   background-color: #ffffff;
-  border: 2px solid #000000;
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000;
+  border-bottom: 4px solid #000000;
+  border-left: 2px solid #000000;
   border-radius: 8px;
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
           transform: translateY(100%);
   visibility: hidden;
-  opacity: 0;
-  transform: translateY(100%);
   -webkit-transition: visibility 0.3s ease, opacity 0.3s ease;
   transition: visibility 0.3s ease, opacity 0.3s ease;
 }
@@ -3173,6 +3156,69 @@ input[name="Enter your password"]::placeholder {
 
 .sign-in__button.is-active {
   color: #fa6648;
+}
+
+.sign-in__item {
+  background-image: url("../img//user-form/field-1.webp");
+  border: none;
+  background-size: 403px 50px;
+  background-repeat: no-repeat;
+}
+.sign-in__item input {
+  background-color: transparent;
+  border: none;
+  width: 403px;
+  height: 50px;
+}
+.sign-in__item input::-webkit-input-placeholder {
+  color: #000000;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.4%;
+  letter-spacing: 0.5px;
+  padding: 10px;
+}
+.sign-in__item input::-moz-placeholder {
+  color: #000000;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.4%;
+  letter-spacing: 0.5px;
+  padding: 10px;
+}
+.sign-in__item input:-ms-input-placeholder {
+  color: #000000;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.4%;
+  letter-spacing: 0.5px;
+  padding: 10px;
+}
+.sign-in__item input::-ms-input-placeholder {
+  color: #000000;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.4%;
+  letter-spacing: 0.5px;
+  padding: 10px;
+}
+.sign-in__item input::placeholder {
+  color: #000000;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.4%;
+  letter-spacing: 0.5px;
+  padding: 10px;
 }
 
 .sign-in__button-submit {

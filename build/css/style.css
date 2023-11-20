@@ -1582,7 +1582,10 @@ button,
   width: 40px;
   height: 40px;
   padding: 0;
-  background: rgba(255, 255, 255, 0);
+  background-image: url("../img/svg/burger-menu-ellipse.svg");
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
 }

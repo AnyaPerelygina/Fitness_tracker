@@ -81,7 +81,10 @@
     height: 40px;
     padding: 0;
 
-    background: $color-transparent;
+    background-image: url('../img/svg/burger-menu-ellipse.svg');
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
     border: none;
     cursor: pointer;
   }

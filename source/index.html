@@ -49,7 +49,6 @@
             </li>
           </ul>
           <button class="header__toggle toggle" type="button" aria-label="Menu.">
-            <!-- <span class="visually-hidden">Open menu</span> -->
             <svg class="toggle__opened" width="24" height="24" aria-hidden="true" focusable="false">
               <use href="img/sprite.svg#menu"></use>
             </svg>
@@ -171,18 +170,18 @@
         <section class="subscription">
           <div class="subscription__wrapper">
             <div class="subscription__text">
-              <h2 class="subscription__title">Start training already on your watch</h2>
+              <h2 class="subscription__title">Subscribe to the news now and get a bonus!</h2>
               <p>
                 Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat. 
                 Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat.
               </p>
-              <div class="subscription__form form">
-                <form action="#" method="post" novalidate>
+              <div class="subscription__form form" >
+                <form action="#" method="post" autocomplete="off" novalidate>
                   <div class="form__email" data-validate-type="email" data-on-input-validate data-required>
                     <label class="visually-hidden" for="email">Email</label>
                     <input placeholder="Email" id="Email" type="email" name="email" aria-invalid="true" required>
                   </div>
-                  <button class="form__button" type="submit">Let’s GO!</button>
+                  <button class="form__button" type="submit" data-open-modal="subscription">Let’s GO!</button>
                 </form>
               </div>
             </div>
@@ -248,7 +247,7 @@
                       <li class="card__item">200 Clients</li>
                       <li class="card__item">Chat support</li>
                     </ul>
-                    <button class="card__button" type="button">Get started</button>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
                   </li>
                   <li class="pricing__item pricing__item--basic card">
                     <h3>Basic</h3>
@@ -259,7 +258,7 @@
                       <li class="card__item">500 Clients</li>
                       <li class="card__item">Chat + Email support</li>
                     </ul>
-                    <button class="card__button" type="button">Get started</button>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
                   </li>
                   <li class="pricing__item pricing__item--advenced card">
                     <h3>Advenced</h3>
@@ -270,7 +269,7 @@
                       <li class="card__item">1 000 Clients</li>
                       <li class="card__item">Chat + Email support</li>
                     </ul>
-                    <button class="card__button" type="button">Get started</button>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
                   </li>
                   <li class="pricing__item pricing__item--mostAdvenced card">
                     <h3>Most Advanced</h3>
@@ -281,7 +280,7 @@
                       <li class="card__item">10 000 Clients</li>
                       <li class="card__item">Personal Manager</li>
                     </ul>
-                    <button class="card__button" type="button">Get started</button>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
                   </li>
                 </ul>
                 <ul class="pricing__list tabs__element" data-tabs="element">
@@ -294,7 +293,7 @@
                       <li class="card__item">200 Clients</li>
                       <li class="card__item">Chat support</li>
                     </ul>
-                    <button class="card__button" type="button">Get started</button>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
                   </li>
                   <li class="pricing__item pricing__item--basic card">
                     <h3>Basic</h3>
@@ -305,7 +304,7 @@
                       <li class="card__item">500 Clients</li>
                       <li class="card__item">Chat + Email support</li>
                     </ul>
-                    <button class="card__button" type="button">Get started</button>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
                   </li>
                   <li class="pricing__item pricing__item--advenced card">
                     <h3>Advenced</h3>
@@ -316,7 +315,7 @@
                       <li class="card__item">1 000 Clients</li>
                       <li class="card__item">Chat + Email support</li>
                     </ul>
-                    <button class="card__button" type="button">Get started</button>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
                   </li>
                   <li class="pricing__item pricing__item--mostAdvenced card">
                     <h3>Most Advanced</h3>
@@ -327,7 +326,7 @@
                       <li class="card__item">10 000 Clients</li>
                       <li class="card__item">Personal Manager</li>
                     </ul>
-                    <button class="card__button" type="button">Get started</button>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
                   </li>
                 </ul>
               </div>
@@ -336,7 +335,7 @@
         </section>
         <section class="double-block">
           <div class="bonus">
-            <h2 class="bonus__title">Download now and&nbsp;get a bonus!</h2>
+            <h2 class="bonus__title">Start training already on your watch!</h2>
             <p>Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat ea exercitation.</p>
             <div class="bonus__buttons">
               <button class="bonus__button bonus__button--left" type="button" aria-label="Download app.">
@@ -463,12 +462,12 @@
     </div>
 
     <!-- Модалки -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal modal--preload modal-subscription" data-modal="subscription">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <p>Check your email!</p>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="15" height="15">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
@@ -477,19 +476,63 @@
       </div>
     </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
+    <div class="modal modal--preload modal-pricing" data-modal="pricing">
+      <div class="modal__wrapper modal__wrapper--pricing">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <div class="sign-in__content">
+            <h2 class="modal__title">Sign in!</h2>
+            <div class="modal__sign-in">
+              <form action="#" method="post" autocomplete="off">
+                <div class="sign-in__item custom-input custom-input--primary" data-validate-type="text" data-limitation="name" data-required>
+                  <label>
+                    <span class="custom-input__label custom-input__label--primary visually-hidden">Your name</span>
+                    <input type="text" name="name" placeholder="Your name" pattern="^[а-яА-ЯёЁa-zA-Z\-]+$" required>
+                  </label>
+                </div>
+                <div class="custom-input sign-in__item custom-input--primary" data-validate-type="email" data-required data-email-length="18">
+                  <label>
+                    <span class="custom-input__label custom-input__label--primary visually-hidden">Email</span>
+                    <input placeholder="fitnesstracker@mail.com" id="Email" type="email" name="user-email" aria-invalid="true" required>
+                  </label>
+                </div>
+                <div class="custom-input sign-in__item custom-input--primary" data-validate-type="password" data-required data-password-length="8">
+                  <label>
+                    <span class="custom-input__label custom-input__label--primary visually-hidden">Your password</span>
+                    <input placeholder="Create your password" type="password" name="password" pattern="[0-9a-fA-F]{4,8}" maxlength="8" required>
+                  </label>
+                </div>
+                <div class="custom-select sign-in__item custom-select--primary" data-select data-validate-type="select" data-name="tariff__plan" data-id="tariff__plan" data-required>
+                  <span class="custom-select__label custom-select__label--primary">Select tariff plan</span>
+                  <button class="custom-select__button custom-select__button--primary" type="button" aria-label="Select one of the options">
+                    <span class="custom-select__text"></span>
+                    <span class="custom-select__icon custom-select__icon--primary"></span>
+                  </button>
+                  <ul class="custom-select__list custom-select__list--primary" role="listbox">
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Free plan</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Basic</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Advanced</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Most Advanced</li>
+                  </ul>
+                </div>
+                <div class="custom-toggle custom-toggle--primary custom-toggle--checkbox" data-validate-type="checkbox" data-required>
+                  <label>
+                    <input type="checkbox" value="user-agreement" name="user-agreement" checked>
+                    <span class="custom-toggle__icon custom-toggle__icon--primary"></span>
+                    <span class="custom-toggle__label">I agree to the processing of personal data</span>
+                  </label>
+                </div>
+                <button class="sign-in__button-submit" type="submit">Sign in</button>
+              </form>
+            </div>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="15" height="15">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

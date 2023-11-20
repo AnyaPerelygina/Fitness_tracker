@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: rgba($color-blue-violet, 0.8);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -59,10 +59,11 @@
   &__content {
     position: relative;
 
-    width: 600px;
-    padding: 40px;
-
-    background-color: $color-default-white;
+    background-image: url('../img/user-form/form-background.webp');
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 483px;
+    padding: 40px 40px 44px;
 
     @include vp-767 {
       width: 100%;
@@ -115,5 +116,32 @@
     opacity: 1;
 
     pointer-events: auto;
+  }
+}
+
+.modal__title {
+  font-family: $ff-permanent;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 2px;
+  color: $color-tomato;
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+.modal-subscription {
+  p {
+    font-family: $ff-permanent;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 2px;
+    margin: 150px auto 0;
+    padding: 0;
+    max-width: 300px;
+    text-align: center;
   }
 }

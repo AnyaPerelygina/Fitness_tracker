@@ -9,6 +9,10 @@
   padding: 42px 120px;
   margin: 0 auto;
   max-width: 1440px;
+
+  @include vp-1199 {
+    padding: 19px 45px;
+  }
 }
 
 .footer__nav {

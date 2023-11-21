@@ -40,9 +40,9 @@
     min-height: 100%;
     padding: 60px 40px;
 
-    @include vp-767 {
-      padding: 60px 16px;
-    }
+    // @include vp-767 {
+    //   padding: 60px 16px;
+    // }
   }
 
   &__overlay {
@@ -65,10 +65,10 @@
     width: 483px;
     padding: 40px 40px 44px;
 
-    @include vp-767 {
-      width: 100%;
-      padding: 20px;
-    }
+    // @include vp-767 {
+    //   width: 100%;
+    //   padding: 20px;
+    // }
   }
 
   &__close-btn {
@@ -95,15 +95,15 @@
     }
   }
 
-  &--fit-content {
-    .modal__content {
-      width: auto;
+  // &--fit-content {
+  //   .modal__content {
+  //     width: auto;
 
-      @include vp-767 {
-        width: 100%;
-      }
-    }
-  }
+  //     @include vp-767 {
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 
   &--no-scale {
     transform: none;

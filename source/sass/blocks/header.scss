@@ -17,11 +17,15 @@
 
 .header__wrapper {
   display: grid;
-  grid-template-columns: 1fr 116px 20px;
+  grid-template-columns: 1fr 116px 49px;
   padding: 19px 149px 19px 121px;
   margin: 0 auto;
   max-width: 1440px;
   position: relative;
+  
+  @include vp-1199 {
+    padding: 19px 45px;
+  }
 }
 
 .header__logo {
@@ -38,9 +42,14 @@
   background-color: $color-default-white;
   border-radius: 15px;
   border: 2px solid $color-default-black;
-  width: 230px;
+  width: 237px;
   padding: 60px 10px 10px 20px;
   visibility: hidden;
+
+  @include vp-1199 {
+    right: 32px;
+    width: 212px;
+  }
 }
 
 .header.is-opened .header__nav {
@@ -51,6 +60,6 @@
   color: $color-blue-violet;
 }
 
-.header.is-opened .social-list {
-  margin: 0 0 0 -32px;
-}
+// .header.is-opened .social-list {
+//   margin: 0 0 0 -32px;
+// }

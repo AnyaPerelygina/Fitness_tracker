@@ -1547,11 +1547,6 @@ button,
   min-height: 100%;
   padding: 60px 40px;
 }
-@media (max-width: 767px) {
-  .modal__wrapper {
-    padding: 60px 16px;
-  }
-}
 .modal__overlay {
   position: absolute;
   top: 0;
@@ -1567,12 +1562,6 @@ button,
   height: 550px;
   width: 483px;
   padding: 40px 40px 44px;
-}
-@media (max-width: 767px) {
-  .modal__content {
-    width: 100%;
-    padding: 20px;
-  }
 }
 .modal__close-btn {
   position: absolute;
@@ -1591,14 +1580,6 @@ button,
 }
 .modal--responsive .modal__content {
   width: 100%;
-}
-.modal--fit-content .modal__content {
-  width: auto;
-}
-@media (max-width: 767px) {
-  .modal--fit-content .modal__content {
-    width: 100%;
-  }
 }
 .modal--no-scale {
   -webkit-transform: none;
@@ -2255,12 +2236,17 @@ input[name="Enter your password"]::placeholder {
 .header__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 116px 20px;
-  grid-template-columns: 1fr 116px 20px;
+  -ms-grid-columns: 1fr 116px 49px;
+  grid-template-columns: 1fr 116px 49px;
   padding: 19px 149px 19px 121px;
   margin: 0 auto;
   max-width: 1440px;
   position: relative;
+}
+@media (max-width: 1199px) {
+  .header__wrapper {
+    padding: 19px 45px;
+  }
 }
 
 .header__logo {
@@ -2277,9 +2263,15 @@ input[name="Enter your password"]::placeholder {
   background-color: #ffffff;
   border-radius: 15px;
   border: 2px solid #000000;
-  width: 230px;
+  width: 237px;
   padding: 60px 10px 10px 20px;
   visibility: hidden;
+}
+@media (max-width: 1199px) {
+  .header__nav {
+    right: 32px;
+    width: 212px;
+  }
 }
 
 .header.is-opened .header__nav {
@@ -2288,10 +2280,6 @@ input[name="Enter your password"]::placeholder {
 
 .header.is-opened .social-list__icon {
   color: #7711dd;
-}
-
-.header.is-opened .social-list {
-  margin: 0 0 0 -32px;
 }
 
 .nav__list {
@@ -2327,7 +2315,7 @@ input[name="Enter your password"]::placeholder {
      -moz-column-gap: 32px;
           column-gap: 32px;
   list-style-type: none;
-  margin: 0 0 0 -42px;
+  margin: 0 0 0 -13px;
   padding: 0;
   z-index: 2;
 }
@@ -2354,7 +2342,7 @@ input[name="Enter your password"]::placeholder {
   width: 49px;
   height: 48px;
   padding: 0 6px 0 3px;
-  margin: 0;
+  margin: 0 0 0 30px;
   border: none;
   outline: none;
   cursor: pointer;
@@ -2368,6 +2356,11 @@ input[name="Enter your password"]::placeholder {
 }
 .toggle:disabled {
   pointer-events: none;
+}
+@media (max-width: 1199px) {
+  .toggle {
+    margin: 0;
+  }
 }
 
 .toggle .toggle__closed {
@@ -2399,6 +2392,14 @@ input[name="Enter your password"]::placeholder {
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
+}
+@media (max-width: 1199px) {
+  .hero__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .hero__text {
@@ -2503,6 +2504,11 @@ input[name="Enter your password"]::placeholder {
   padding: 42px 120px;
   margin: 0 auto;
   max-width: 1440px;
+}
+@media (max-width: 1199px) {
+  .footer__wrapper {
+    padding: 19px 45px;
+  }
 }
 
 .footer__nav {
@@ -3273,6 +3279,17 @@ input[name="Enter your password"]::placeholder {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffffff;
+}
+@media (max-width: 1199px) {
+  .double-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .sign-in {

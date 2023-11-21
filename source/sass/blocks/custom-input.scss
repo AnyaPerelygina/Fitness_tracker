@@ -28,10 +28,9 @@
       min-height: 50px;
       margin-left: auto;
       margin: 0 0 16px;
-      // padding: 10px;
       padding: 0;
+      padding-left: 9px;
 
-      // border: 2px solid $color-default-black;
       border: none;
       border-radius: 5px;
       outline: none;
@@ -114,13 +113,17 @@
 }
 
 input::placeholder {
-  color: $color-default-black;
   font-family: $ff-montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 145.4%;
   letter-spacing: 0.5px;
+  color: $color-default-black;
+
+  @include vp-1199 {
+    font-size: 14px;
+  }
 }
 
 input[name="Enter your email"]::placeholder,

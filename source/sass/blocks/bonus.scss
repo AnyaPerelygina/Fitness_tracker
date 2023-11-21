@@ -10,55 +10,50 @@
     max-width: 399px;
     padding: 0;
     margin: 0 0 50px;
+
+    @include vp-1199 {
+      font-size: 16px;
+      text-align: center;
+      margin: 0 auto 50px;
+    }
   }
 }
 
 .bonus__title {
-  font-family: $ff-permanent;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48.5px;
-  letter-spacing: 2px;
   margin: 0 0 25px;
   padding: 0;
+
+  @include vp-1199 {
+    max-width: 500px;
+    text-align: center;
+  }
 }
 
 .bonus__buttons {
   display: flex;
   flex-direction: row;
-  column-gap: 29px;
+  gap: 29px;
+
+  @include vp-1199 {
+    gap: 15px;
+    justify-content: center;
+  }
 }
 
 .bonus__button {
-  font-family: $ff-montserrat;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 100%;
-  letter-spacing: 0.45px;
   color: $color-default-white;
-  border-radius: 5px;
-  align-items: center;
-  cursor: pointer;
-  padding: 0 32px;
-  height: 52px;
-
-  display: flex;
-  flex-direction: row;
-  border: none;
-  column-gap: 9px;
 
   &--left {
     background-image: url('../img/bonus/bonus-btn-left.webp');
     background-repeat: no-repeat;
     background-color: transparent;
-    background-size: 189px 52px;
+    background-size: contain;
   }
 
   &--right {
     background-image: url('../img/bonus/bonus-btn-right.webp');
     background-repeat: no-repeat;
     background-color: transparent;
-    background-size: 189px 52px;
+    background-size: contain;
   }
 }

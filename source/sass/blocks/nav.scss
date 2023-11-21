@@ -7,6 +7,12 @@
   z-index: 2;
 }
 
+// .nav__item {
+//   @include vp-1199 {
+//     font-size: 16px;
+//   }
+// }
+
 .nav.is-opened {
   transform: translate(0, 0) scale(1);
   visibility: hidden;

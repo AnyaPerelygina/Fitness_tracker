@@ -1497,6 +1497,29 @@ button,
   opacity: 1;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+@media (max-width: 1199px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1674,6 +1697,7 @@ button,
   margin-left: auto;
   margin: 0 0 16px;
   padding: 0;
+  padding-left: 9px;
   border: none;
   border-radius: 5px;
   outline: none;
@@ -1751,53 +1775,70 @@ button,
 }
 
 input::-webkit-input-placeholder {
-  color: #000000;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 145.4%;
   letter-spacing: 0.5px;
+  color: #000000;
 }
 
 input::-moz-placeholder {
-  color: #000000;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 145.4%;
   letter-spacing: 0.5px;
+  color: #000000;
 }
 
 input:-ms-input-placeholder {
-  color: #000000;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 145.4%;
   letter-spacing: 0.5px;
+  color: #000000;
 }
 
 input::-ms-input-placeholder {
-  color: #000000;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 145.4%;
   letter-spacing: 0.5px;
+  color: #000000;
 }
 
 input::placeholder {
-  color: #000000;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 145.4%;
   letter-spacing: 0.5px;
+  color: #000000;
+}
+@media (max-width: 1199px) {
+  input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  input::-moz-placeholder {
+    font-size: 14px;
+  }
+  input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  input::placeholder {
+    font-size: 14px;
+  }
 }
 
 input[name="Enter your email"]::-webkit-input-placeholder, input[name="Enter your password"]::-webkit-input-placeholder {
@@ -1840,7 +1881,7 @@ input[name="Enter your password"]::placeholder {
   }
 }
 .custom-toggle:last-of-type {
-  padding: 22px 0 30px 0;
+  padding: 26px 0 35px;
 }
 @media screen and (max-width: 767px) {
   .custom-toggle:last-of-type {
@@ -1856,13 +1897,13 @@ input[name="Enter your password"]::placeholder {
 }
 .custom-toggle label {
   position: relative;
-  padding-left: 40px;
+  padding-left: 47px;
   cursor: pointer;
 }
 .custom-toggle label span {
   margin-bottom: 0;
   margin-left: 0;
-  font-size: 16px;
+  font-size: 15px;
   color: #000000;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
@@ -1870,12 +1911,17 @@ input[name="Enter your password"]::placeholder {
   line-height: 145.4%;
   letter-spacing: 0.5px;
 }
+@media (max-width: 1199px) {
+  .custom-toggle label span {
+    font-size: 14px;
+  }
+}
 .custom-toggle--checkbox .custom-toggle__icon {
   position: absolute;
   top: 0;
   left: 0;
-  width: 28px;
-  height: 28px;
+  width: 31px;
+  height: 31px;
   border: 2px solid #000000;
   border-radius: 8px;
   -webkit-transition: border 0.3s ease;
@@ -1969,6 +2015,11 @@ input[name="Enter your password"]::placeholder {
     }
   } */
 }
+@media (max-width: 1199px) {
+  .custom-select {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 767px) {
   .custom-select {
     padding: 4px 0 14px;
@@ -1987,6 +2038,11 @@ input[name="Enter your password"]::placeholder {
   transition: transform 0.3s ease, opacity 0.3s ease;
   transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
   pointer-events: none;
+}
+@media (max-width: 1199px) {
+  .custom-select__label {
+    margin: 0 0 0 16px;
+  }
 }
 @media screen and (max-width: 767px) {
   .custom-select__label {
@@ -2082,6 +2138,11 @@ input[name="Enter your password"]::placeholder {
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
+}
+@media (max-width: 1199px) {
+  .custom-select__item {
+    font-size: 16px;
+  }
 }
 .custom-select__item[aria-selected=true] {
   background-color: #fa6648;
@@ -2239,13 +2300,10 @@ input[name="Enter your password"]::placeholder {
   -ms-grid-columns: 1fr 116px 49px;
   grid-template-columns: 1fr 116px 49px;
   padding: 19px 149px 19px 121px;
-  margin: 0 auto;
-  max-width: 1440px;
-  position: relative;
 }
 @media (max-width: 1199px) {
   .header__wrapper {
-    padding: 19px 45px;
+    padding: 19px 60px;
   }
 }
 
@@ -2269,7 +2327,7 @@ input[name="Enter your password"]::placeholder {
 }
 @media (max-width: 1199px) {
   .header__nav {
-    right: 32px;
+    right: 50px;
     width: 212px;
   }
 }
@@ -2381,29 +2439,8 @@ input[name="Enter your password"]::placeholder {
   background-color: #7711dd;
 }
 
-.hero__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: relative;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-@media (max-width: 1199px) {
-  .hero__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .hero__text {
-  padding: 160px 0 270px 120px;
+  padding: 163px 0 263px;
 }
 .hero__text p {
   font-size: 18px;
@@ -2415,6 +2452,18 @@ input[name="Enter your password"]::placeholder {
   max-width: 420px;
   margin: 0;
   padding: 0 0 50px;
+}
+@media (max-width: 1199px) {
+  .hero__text p {
+    max-width: 320px;
+    font-size: 16px;
+    padding: 0 14px 50px 0;
+  }
+}
+@media (max-width: 1199px) {
+  .hero__text {
+    padding: 38px 0 200px;
+  }
 }
 
 .hero__title {
@@ -2428,11 +2477,31 @@ input[name="Enter your password"]::placeholder {
   margin: 0;
   padding: 0 0 30px;
 }
+@media (max-width: 1199px) {
+  .hero__title {
+    font-size: 65px;
+    line-height: 62.5px;
+    padding: 0 0 30px;
+  }
+}
 
 .hero__img {
   position: absolute;
-  top: -31px;
+  top: -27px;
   right: 0;
+}
+@media (max-width: 1199px) {
+  .hero__img {
+    top: unset;
+    right: 0;
+    bottom: 0;
+    width: 430px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__img {
+    display: none;
+  }
 }
 
 .hero__buttons {
@@ -2447,43 +2516,30 @@ input[name="Enter your password"]::placeholder {
      -moz-column-gap: 15px;
           column-gap: 15px;
 }
-
-.hero__button {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 100%;
-  letter-spacing: 0.45px;
-  border-radius: 5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border: none;
-  -webkit-column-gap: 9px;
-     -moz-column-gap: 9px;
-          column-gap: 9px;
+@media (max-width: 1199px) {
+  .hero__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: unset;
+       -moz-column-gap: unset;
+            column-gap: unset;
+    row-gap: 15px;
+  }
 }
+
 .hero__button--left {
-  padding: 11px 32px 10px 31px;
   background-image: url("../img/hero/hero-btn-left.webp");
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: 177px 46px;
+  background-size: contain;
 }
 .hero__button--right {
-  padding: 8px 32px 8px 31px;
   background-image: url("../img/hero/hero-btn-right.webp");
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: 177px 46px;
+  background-size: contain;
 }
 
 .footer {
@@ -2491,9 +2547,6 @@ input[name="Enter your password"]::placeholder {
 }
 
 .footer__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -2501,19 +2554,19 @@ input[name="Enter your password"]::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 42px 120px;
-  margin: 0 auto;
-  max-width: 1440px;
+  padding-top: 42px;
+  padding-bottom: 38px;
 }
 @media (max-width: 1199px) {
   .footer__wrapper {
-    padding: 19px 45px;
+    padding-top: 19px;
+    padding-bottom: 19px;
   }
 }
 
 .footer__nav {
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 0 -26px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2522,9 +2575,9 @@ input[name="Enter your password"]::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-column-gap: 15px;
-     -moz-column-gap: 15px;
-          column-gap: 15px;
+  -webkit-column-gap: 34px;
+     -moz-column-gap: 34px;
+          column-gap: 34px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2537,6 +2590,11 @@ input[name="Enter your password"]::placeholder {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.5px;
+}
+@media (max-width: 1199px) {
+  .footer__nav-link {
+    font-size: 16px;
+  }
 }
 
 .footer__logo img {
@@ -2555,44 +2613,26 @@ input[name="Enter your password"]::placeholder {
      -moz-column-gap: 29px;
           column-gap: 29px;
 }
+@media (max-width: 1199px) {
+  .footer__buttons {
+    display: none;
+  }
+}
 
 .footer__button {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 100%;
-  letter-spacing: 0.45px;
   color: #ffffff;
-  border-radius: 5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  padding: 0 32px;
-  height: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border: none;
-  -webkit-column-gap: 9px;
-     -moz-column-gap: 9px;
-          column-gap: 9px;
 }
 .footer__button--left {
   background-image: url("../img/footer/footer-btn-left.webp");
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: 177px 52px;
+  background-size: contain;
 }
 .footer__button--right {
   background-image: url("../img/footer/footer-btn-right.webp");
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: 177px 52px;
+  background-size: contain;
 }
 
 .about {
@@ -2608,9 +2648,14 @@ input[name="Enter your password"]::placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 80px 0 80px;
+  padding: 80px 0 44px;
   overflow: hidden;
   position: relative;
+}
+@media (max-width: 1199px) {
+  .about__container {
+    margin: 0 60px;
+  }
 }
 .about__container p {
   font-size: 18px;
@@ -2620,25 +2665,36 @@ input[name="Enter your password"]::placeholder {
   letter-spacing: 0.45px;
   max-width: 510px;
   margin: 0 auto;
-  padding: 0 15px 60px 15px;
+  padding: 0 15px 60px;
   color: #474a57;
+}
+@media (max-width: 1199px) {
+  .about__container p {
+    font-size: 16px;
+    padding: 0 15px 45px;
+  }
 }
 
 .about__title {
-  font-family: "Permanent Marker", "Arial", sans-serif;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48.5px;
-  letter-spacing: 2px;
   margin: 0 0 30px;
   padding: 0 15px;
+}
+@media (max-width: 1199px) {
+  .about__title {
+    margin: 0 0 20px;
+  }
 }
 
 .about__swiper {
   overflow: visible;
   width: 1080px;
   margin: 0 auto;
+}
+@media (max-width: 1199px) {
+  .about__swiper {
+    width: 620px;
+    padding: 0;
+  }
 }
 
 .about__swiper .swiper-slide {
@@ -2656,6 +2712,11 @@ input[name="Enter your password"]::placeholder {
           flex-direction: row;
   margin-bottom: 46px;
 }
+@media (max-width: 1199px) {
+  .about__wrapper {
+    margin-bottom: 30px;
+  }
+}
 
 .about__slide {
   max-width: 340px;
@@ -2670,6 +2731,11 @@ input[name="Enter your password"]::placeholder {
   -ms-grid-columns: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
   padding: 25px 23px 32px 20px;
+}
+@media (max-width: 1199px) {
+  .about__slide {
+    max-width: 300px;
+  }
 }
 .about__slide--1 {
   background-color: #fa6648;
@@ -2701,6 +2767,11 @@ input[name="Enter your password"]::placeholder {
   grid-column: span 2;
   color: #ffffff;
 }
+@media (max-width: 1199px) {
+  .about__slide p {
+    font-size: 14px;
+  }
+}
 
 .about__slide-title {
   font-size: 20px;
@@ -2710,6 +2781,13 @@ input[name="Enter your password"]::placeholder {
   letter-spacing: 0.5px;
   margin: 0;
   padding: 0 0 0 10px;
+}
+@media (max-width: 1199px) {
+  .about__slide-title {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 0 0 20px;
+  }
 }
 
 .about__button {
@@ -2742,6 +2820,19 @@ input[name="Enter your password"]::placeholder {
 .about__button-next:active {
   opacity: 0.5;
 }
+@media (max-width: 1199px) {
+  .about__button-prev,
+.about__button-next {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .about__button-icon {
+    width: 80%;
+    height: 80%;
+  }
+}
 
 .subscription {
   background-color: #962eff;
@@ -2753,12 +2844,14 @@ input[name="Enter your password"]::placeholder {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  padding: 49px 146px 30px 120px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 1440px;
-  margin: 0 auto;
+  padding: 49px 146px 35px 120px;
+}
+@media (max-width: 1199px) {
+  .subscription__wrapper {
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding: 60px;
+  }
 }
 
 .subscription__text p {
@@ -2769,18 +2862,27 @@ input[name="Enter your password"]::placeholder {
   letter-spacing: 0.45px;
   max-width: 483px;
   padding: 0;
-  margin: 0 0 50px;
+  margin: 0 0 52px;
+}
+@media (max-width: 1199px) {
+  .subscription__text p {
+    font-size: 14px;
+    margin: 0 0 25px;
+  }
 }
 
 .subscription__title {
-  font-family: "Permanent Marker", "Arial", sans-serif;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48.5px;
-  letter-spacing: 2px;
   padding: 0;
-  margin: 0 0 25px;
+  margin: 0 0 55px;
+}
+@media (max-width: 1199px) {
+  .subscription__title {
+    margin: 0 0 25px;
+  }
+}
+
+.subscription__img {
+  margin: 0 0 0 14px;
 }
 
 .form form {
@@ -2791,15 +2893,22 @@ input[name="Enter your password"]::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  gap: 10px;
+}
+@media (max-width: 1199px) {
+  .form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .form__email {
   background-image: url("../img/subscription-form/subscription-field.webp");
   border: none;
-  background-size: 277px 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .form__email input {
   background-color: transparent;
@@ -2857,6 +2966,23 @@ input[name="Enter your password"]::placeholder {
   letter-spacing: 0.5px;
   padding-left: 20px;
 }
+@media (max-width: 1199px) {
+  .form__email input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .form__email input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .form__email input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .form__email input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .form__email input::placeholder {
+    font-size: 16px;
+  }
+}
 
 .form__button {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -2872,29 +2998,41 @@ input[name="Enter your password"]::placeholder {
   height: 48px;
   cursor: pointer;
   background-image: url("../img/subscription-form/subscription-btn.webp");
-  background-size: 189px 48px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 1199px) {
+  .form__button {
+    font-size: 14px;
+    background-size: 260px 50px;
+    width: 260px;
+    height: 50px;
+  }
 }
 
 .feedback {
-  padding: 150px 120px 120px;
   background-color: #ffffff;
 }
 
 .feedback__wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 60px;
 }
 
 .feedback__title {
-  font-family: "Permanent Marker", "Arial", sans-serif;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48.5px;
-  letter-spacing: 2px;
   text-align: center;
   margin: 0 0 60px;
   padding: 0;
+}
+@media (max-width: 1199px) {
+  .feedback__title {
+    margin: 0 0 40px;
+  }
 }
 
 .feedback__list {
@@ -2924,6 +3062,11 @@ input[name="Enter your password"]::placeholder {
   padding: 0 0 15px;
   color: #474a57;
 }
+@media (max-width: 1199px) {
+  .feedback__card p {
+    font-size: 14px;
+  }
+}
 .feedback__card data {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
@@ -2932,10 +3075,15 @@ input[name="Enter your password"]::placeholder {
   line-height: 145.4%;
   letter-spacing: 0.5px;
 }
+@media (max-width: 1199px) {
+  .feedback__card data {
+    font-size: 14px;
+  }
+}
 
 .feedback__card-title {
   margin: 0;
-  padding: 25px 0 5px;
+  padding: 16px 0 5px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -2943,10 +3091,21 @@ input[name="Enter your password"]::placeholder {
   line-height: 32px;
   letter-spacing: 0.625px;
 }
+@media (max-width: 1199px) {
+  .feedback__card-title {
+    font-size: 18px;
+  }
+}
 
 .card {
-  padding: 30px 30px 40px;
+  padding: 30px 30px 53px;
   width: 278px;
+}
+@media (max-width: 1199px) {
+  .card {
+    padding: 30px 20px;
+    width: 230px;
+  }
 }
 
 .card__list {
@@ -2962,6 +3121,12 @@ input[name="Enter your password"]::placeholder {
           flex-direction: column;
   gap: 10px;
 }
+@media (max-width: 1199px) {
+  .card__list {
+    margin: 20px 0;
+    gap: 5px;
+  }
+}
 
 .card__item {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -2970,6 +3135,11 @@ input[name="Enter your password"]::placeholder {
   font-weight: 500;
   line-height: 145.4%;
   letter-spacing: 0.5px;
+}
+@media (max-width: 1199px) {
+  .card__item {
+    font-size: 14px;
+  }
 }
 
 .card__button {
@@ -2985,8 +3155,15 @@ input[name="Enter your password"]::placeholder {
   background-image: url("../img/subscription/subscription-btn.webp");
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: 217px 51px;
+  background-size: contain;
   cursor: pointer;
+}
+@media (max-width: 1199px) {
+  .card__button {
+    font-size: 14px;
+    padding: 13px 23px 18px;
+    width: 85%;
+  }
 }
 
 .pricing {
@@ -2994,19 +3171,12 @@ input[name="Enter your password"]::placeholder {
 }
 
 .pricing__wrapper {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 80px 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding-top: 80px;
+  padding-bottom: 80px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .pricing__wrapper p {
   color: #474a57;
@@ -3019,16 +3189,26 @@ input[name="Enter your password"]::placeholder {
   padding: 0;
   margin: 0 0 15px;
 }
+@media (max-width: 1199px) {
+  .pricing__wrapper p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1199px) {
+  .pricing__wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
 
 .pricing__title {
-  font-family: "Permanent Marker", "Arial", sans-serif;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48.5px;
-  letter-spacing: 2px;
   padding: 0;
   margin: 0 0 60px;
+}
+@media (max-width: 1199px) {
+  .pricing__title {
+    margin: 0 0 30px;
+  }
 }
 
 .pricing__tabs {
@@ -3042,6 +3222,11 @@ input[name="Enter your password"]::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 1199px) {
+  .pricing__tabs {
+    width: 600px;
+  }
 }
 
 .pricing__nav {
@@ -3075,11 +3260,21 @@ input[name="Enter your password"]::placeholder {
   text-align: center;
   cursor: pointer;
 }
+@media (max-width: 1199px) {
+  .pricing__button {
+    font-size: 18px;
+  }
+}
 .pricing__button:first-child {
   padding: 14px 31px;
 }
 .pricing__button:last-child {
   padding: 14px 40px;
+}
+@media (max-width: 1199px) {
+  .pricing__button:last-child {
+    padding: 14px 46px;
+  }
 }
 .pricing__button:hover, .pricing__buttonfocus, .pricing__button:focus-visible {
   -webkit-transform: scale(1.05);
@@ -3098,6 +3293,11 @@ input[name="Enter your password"]::placeholder {
 .pricing__content {
   width: 1200px;
 }
+@media (max-width: 1199px) {
+  .pricing__content {
+    width: unset;
+  }
+}
 
 .pricing__list {
   display: -webkit-box;
@@ -3111,6 +3311,17 @@ input[name="Enter your password"]::placeholder {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+@media (max-width: 1199px) {
+  .pricing__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (202px)[2];
+    grid-template-columns: repeat(2, 202px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .pricing__item--free {
@@ -3142,6 +3353,12 @@ input[name="Enter your password"]::placeholder {
   letter-spacing: 0.5px;
   margin: 0 0 20px;
 }
+@media (max-width: 1199px) {
+  .pricing__item h3 {
+    font-size: 16px;
+    margin: 0 0 5px;
+  }
+}
 .pricing__item span {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 30px;
@@ -3150,6 +3367,11 @@ input[name="Enter your password"]::placeholder {
   line-height: 150%;
   letter-spacing: 0.45px;
   margin: 0 0 30px;
+}
+@media (max-width: 1199px) {
+  .pricing__item span {
+    font-size: 27px;
+  }
 }
 
 .tabs {
@@ -3204,16 +3426,23 @@ input[name="Enter your password"]::placeholder {
   padding: 0;
   margin: 0 0 50px;
 }
+@media (max-width: 1199px) {
+  .bonus p {
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto 50px;
+  }
+}
 
 .bonus__title {
-  font-family: "Permanent Marker", "Arial", sans-serif;
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 48.5px;
-  letter-spacing: 2px;
   margin: 0 0 25px;
   padding: 0;
+}
+@media (max-width: 1199px) {
+  .bonus__title {
+    max-width: 500px;
+    text-align: center;
+  }
 }
 
 .bonus__buttons {
@@ -3224,64 +3453,48 @@ input[name="Enter your password"]::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-column-gap: 29px;
-     -moz-column-gap: 29px;
-          column-gap: 29px;
+  gap: 29px;
+}
+@media (max-width: 1199px) {
+  .bonus__buttons {
+    gap: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .bonus__button {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 100%;
-  letter-spacing: 0.45px;
   color: #ffffff;
-  border-radius: 5px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  padding: 0 32px;
-  height: 52px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border: none;
-  -webkit-column-gap: 9px;
-     -moz-column-gap: 9px;
-          column-gap: 9px;
 }
 .bonus__button--left {
   background-image: url("../img/bonus/bonus-btn-left.webp");
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: 189px 52px;
+  background-size: contain;
 }
 .bonus__button--right {
   background-image: url("../img/bonus/bonus-btn-right.webp");
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: 189px 52px;
+  background-size: contain;
 }
 
 .double-block {
+  background-color: #ffffff;
+}
+
+.double-block__wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  gap: 113px;
-  padding: 80px 120px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ffffff;
+  gap: 31px;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 @media (max-width: 1199px) {
-  .double-block {
+  .double-block__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3289,14 +3502,21 @@ input[name="Enter your password"]::placeholder {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    gap: 70px;
   }
 }
 
 .sign-in {
   background-image: url("../img/user-form/form-background.webp");
+  background-size: contain;
   background-repeat: no-repeat;
   height: 550px;
   padding: 40px 40px 44px;
+}
+@media (max-width: 1199px) {
+  .sign-in {
+    width: 483px;
+  }
 }
 
 .sign-in__tabs {
@@ -3304,6 +3524,14 @@ input[name="Enter your password"]::placeholder {
 }
 
 .sign-in__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
   margin: 0 0 40px;
 }
 
@@ -3317,6 +3545,13 @@ input[name="Enter your password"]::placeholder {
   border: none;
   background-color: transparent;
   color: #000000;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 1199px) {
+  .sign-in__button {
+    font-size: 20px;
+  }
 }
 
 .sign-in__button.is-active {
@@ -3325,6 +3560,7 @@ input[name="Enter your password"]::placeholder {
 
 .sign-in__item {
   background-image: url("../img//user-form/field-1.webp");
+  background-size: contain;
   border: none;
   background-size: 403px 50px;
   background-repeat: no-repeat;
@@ -3385,6 +3621,23 @@ input[name="Enter your password"]::placeholder {
   letter-spacing: 0.5px;
   padding: 10px;
 }
+@media (max-width: 1199px) {
+  .sign-in__item input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .sign-in__item input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .sign-in__item input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .sign-in__item input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .sign-in__item input::placeholder {
+    font-size: 16px;
+  }
+}
 
 .sign-in__button-submit {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -3402,4 +3655,56 @@ input[name="Enter your password"]::placeholder {
   width: 403px;
   min-height: 50px;
   cursor: pointer;
+}
+@media (max-width: 1199px) {
+  .sign-in__button-submit {
+    font-size: 14px;
+  }
+}
+
+.btn {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 0.45px;
+  border-radius: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 13px 32px;
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: none;
+  -webkit-column-gap: 9px;
+     -moz-column-gap: 9px;
+          column-gap: 9px;
+}
+@media (max-width: 1199px) {
+  .btn {
+    font-size: 90%;
+    padding: 13px 32px;
+    height: 49px;
+  }
+}
+
+.title {
+  font-family: "Permanent Marker", "Arial", sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+@media (max-width: 1199px) {
+  .title {
+    font-size: 35px;
+  }
 }

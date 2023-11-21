@@ -6,31 +6,36 @@ const buttonPrev = document.querySelector('.about__button-prev');
 let mySwiper;
 
 const createAboutSlider = () => {
-  if (sliderAbout && innerWidth > 1199) {
-    mySwiper = new Swiper(sliderAbout, {
-      loop: true,
-      slidesPerView: 3,
-      spaceBetween: 30,
-      allowTouchMove: true,
-      init: true,
-      navigation: {
-        nextEl: buttonNext,
-        prevEl: buttonPrev,
+  // if (sliderAbout && innerWidth > 1199) {
+  mySwiper = new Swiper(sliderAbout, {
+    loop: true,
+    allowTouchMove: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    init: true,
+    navigation: {
+      nextEl: buttonNext,
+      prevEl: buttonPrev,
+    },
+    breakpoints: {
+      320: {
+        allowTouchMove: true,
+        slidesPerView: 1,
       },
-      breakpoints: {
-        320: {
-          allowTouchMove: true,
-        },
-        768: {
-          allowTouchMove: true,
-        },
-        1200: {
-          allowTouchMove: false,
-        },
+      768: {
+        allowTouchMove: true,
+        slidesPerView: 2,
+        spaceBetween: 20,
       },
-    });
-  }
+      1200: {
+        allowTouchMove: false,
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
 };
+// };
 
 const destroySwiperIfNeeded = () => {
   if (window.innerWidth <= 1200 && mySwiper) {

@@ -19,12 +19,9 @@
   display: grid;
   grid-template-columns: 1fr 116px 49px;
   padding: 19px 149px 19px 121px;
-  margin: 0 auto;
-  max-width: 1440px;
-  position: relative;
   
   @include vp-1199 {
-    padding: 19px 45px;
+    padding: 19px 60px;
   }
 }
 
@@ -47,7 +44,7 @@
   visibility: hidden;
 
   @include vp-1199 {
-    right: 32px;
+    right: 50px;
     width: 212px;
   }
 }

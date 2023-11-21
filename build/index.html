@@ -18,7 +18,7 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__wrapper">
+        <div class="header__wrapper container">
           <a class="header__logo" href="index.html">
             <picture>
               <source media="(min-width: 320px)" srcset="img/logotype.webp">
@@ -76,18 +76,18 @@
       </header>
       <main>
         <section class="hero">
-          <div class="hero__wrapper">
+          <div class="hero__wrapper container">
             <div class="hero__text">
               <h1 class="hero__title">The best<br> fitness tracker!</h1>
               <p>Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat ea exercitation.</p>
               <div class="hero__buttons">
-                <button class="hero__button hero__button--left" type="button" aria-label="Download app.">
+                <button class="hero__button hero__button--left btn" type="button" aria-label="Download app.">
                   <svg class="hero__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
                     <use href="img/sprite.svg#shape"></use>
                   </svg>
                   <span>Download</span>
                 </button>
-                <button class="hero__button hero__button--right" type="button" aria-label="Download app.">
+                <button class="hero__button hero__button--right btn" type="button" aria-label="Download app.">
                   <svg class="hero__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
                     <use href="img/sprite.svg#play-market"></use>
                   </svg>
@@ -105,7 +105,7 @@
         </section>
         <section class="about" id="about">
           <div class="about__container">
-            <h2 class="about__title">About us</h2>
+            <h2 class="about__title title">About&nbsp;us</h2>
             <p>Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat.</p>
             <div class="about__swiper swiper">
               <div class="about__wrapper swiper-wrapper">
@@ -168,9 +168,9 @@
           </div>
         </section>
         <section class="subscription">
-          <div class="subscription__wrapper">
+          <div class="subscription__wrapper container">
             <div class="subscription__text">
-              <h2 class="subscription__title">Subscribe to the news now and get a bonus!</h2>
+              <h2 class="subscription__title title">Subscribe to&nbsp;the&nbsp;news now and&nbsp;get&nbsp;a&nbsp;bonus!</h2>
               <p>
                 Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat. 
                 Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat.
@@ -181,11 +181,11 @@
                     <label class="visually-hidden" for="email">Email</label>
                     <input placeholder="Email" id="Email" type="email" name="email" aria-invalid="true" required>
                   </div>
-                  <button class="form__button" type="submit" data-open-modal="subscription">Let’s GO!</button>
+                  <button class="form__button" type="submit" data-open-modal="subscription">Let’s&nbsp;GO!</button>
                 </form>
               </div>
             </div>
-            <div class="form__img">
+            <div class="subscription__img">
               <picture>
                 <source media="(min-width: 320px)" srcset="img/watch.webp">
                 <img src="img/watch.png" width="452" height="528" alt="Prototype Fitness tracker on fitnesswatch.">
@@ -194,8 +194,8 @@
           </div>
         </section>
         <section class="feedback" id="feedback">
-          <div class="feedback__wrapper">
-            <h2 class="feedback__title">Stories of our users</h2>
+          <div class="feedback__wrapper container">
+            <h2 class="feedback__title title">Stories of our users</h2>
             <div class="feedback__list">
               <div class="feedback__card">
                 <picture>
@@ -228,9 +228,9 @@
           </div>
         </section>
         <section class="pricing" id="pricing">
-          <div class="pricing__wrapper">
-            <p>We have selected the best payment solutions for you.</p>
-            <h2 class="pricing__title">Choose your tariff plan</h2>
+          <div class="pricing__wrapper container">
+            <p>We have selected the best payment solutions for&nbsp;you.</p>
+            <h2 class="pricing__title title">Choose your&nbsp;tariff plan</h2>
             <div class="pricing__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
               <div class="pricing__nav tabs__controls" data-tabs="controls">
                 <button class="pricing__button tabs__control is-active" data-tabs="control">Month</button>
@@ -334,90 +334,92 @@
           </div>
         </section>
         <section class="double-block">
-          <div class="bonus">
-            <h2 class="bonus__title">Start training already on your watch!</h2>
-            <p>Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat ea exercitation.</p>
-            <div class="bonus__buttons">
-              <button class="bonus__button bonus__button--left" type="button" aria-label="Download app.">
-                <svg class="footer__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
-                  <use href="img/sprite.svg#shape"></use>
-                </svg>
-                <span>Download</span>
-              </button>
-              <button class="bonus__button bonus__button--right" type="button" aria-label="Download app.">
-                <svg class="footer__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
-                  <use href="img/sprite.svg#play-market"></use>
-                </svg>
-                <span>Download</span>
-              </button>
-            </div>
-          </div>
-          <div class="sign-in">
-            <div class="sign-in__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
-              <div class="sign-in__nav tabs__controls" data-tabs="controls">
-                <button class="sign-in__button tabs__control is-active" data-tabs="control">Sign in</button>
-                <button class="sign-in__button tabs__control" data-tabs="control">Log in</button>
+          <div class="double-block__wrapper container">
+            <div class="bonus">
+              <h2 class="bonus__title title">Start training already on&nbsp;your&nbsp;watch!</h2>
+              <p>Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat ea exercitation.</p>
+              <div class="bonus__buttons">
+                <button class="bonus__button bonus__button--left btn" type="button" aria-label="Download app.">
+                  <svg class="footer__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#shape"></use>
+                  </svg>
+                  <span>Download</span>
+                </button>
+                <button class="bonus__button bonus__button--right btn" type="button" aria-label="Download app.">
+                  <svg class="footer__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#play-market"></use>
+                  </svg>
+                  <span>Download</span>
+                </button>
               </div>
-              <div class="sign-in__content tabs__content" data-tabs="content">
-                <div class="sign-in__list tabs__element" data-tabs="element">
-                  <form action="#" method="post" autocomplete="off">
-                    <div class="sign-in__item custom-input custom-input--primary" data-validate-type="text" data-limitation="name" data-required>
-                      <label>
-                        <span class="custom-input__label custom-input__label--primary visually-hidden">Your name</span>
-                        <input type="text" name="name" placeholder="Your name" pattern="^[а-яА-ЯёЁa-zA-Z\-]+$" required>
-                      </label>
-                    </div>
-                    <div class="custom-input sign-in__item custom-input--primary" data-validate-type="email" data-required data-email-length="18">
-                      <label>
-                        <span class="custom-input__label custom-input__label--primary visually-hidden">Email</span>
-                        <input placeholder="fitnesstracker@mail.com" id="Email" type="email" name="user-email" aria-invalid="true" required>
-                      </label>
-                    </div>
-                    <div class="custom-input sign-in__item custom-input--primary" data-validate-type="password" data-required data-password-length="8">
-                      <label>
-                        <span class="custom-input__label custom-input__label--primary visually-hidden">Your password</span>
-                        <input placeholder="Create your password" type="password" name="password" pattern="[0-9a-fA-F]{4,8}" maxlength="8" required>
-                      </label>
-                    </div>
-                    <div class="custom-select sign-in__item custom-select--primary" data-select data-validate-type="select" data-name="tariff__plan" data-id="tariff__plan" data-required>
-                      <span class="custom-select__label custom-select__label--primary">Select tariff plan</span>
-                      <button class="custom-select__button custom-select__button--primary" type="button" aria-label="Select one of the options">
-                        <span class="custom-select__text"></span>
-                        <span class="custom-select__icon custom-select__icon--primary"></span>
-                      </button>
-                      <ul class="custom-select__list custom-select__list--primary" role="listbox">
-                        <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Free plan</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Basic</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Advanced</li>
-                        <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Most Advanced</li>
-                      </ul>
-                    </div>
-                    <div class="custom-toggle custom-toggle--primary custom-toggle--checkbox" data-validate-type="checkbox" data-required>
-                      <label>
-                        <input type="checkbox" value="user-agreement" name="user-agreement" checked>
-                        <span class="custom-toggle__icon custom-toggle__icon--primary"></span>
-                        <span class="custom-toggle__label">I agree to the processing of personal data</span>
-                      </label>
-                    </div>
-                    <button class="sign-in__button-submit" type="submit">Sign in</button>
-                  </form>
+            </div>
+            <div class="sign-in">
+              <div class="sign-in__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
+                <div class="sign-in__nav tabs__controls" data-tabs="controls">
+                  <button class="sign-in__button tabs__control is-active" data-tabs="control">Sign&nbsp;in</button>
+                  <button class="sign-in__button tabs__control" data-tabs="control">Log&nbsp;in</button>
                 </div>
-                <div class="log-in tabs__element" data-tabs="element">
-                  <form action="#" method="post" autocomplete="off">
-                    <div class="sign-in__item custom-input custom-input--primary" data-validate-type="email" data-required data-email-length="18">
-                      <label>
-                        <span class="custom-input__label custom-input__label--primary visually-hidden">Enter your email</span>
-                        <input type="email" name="Enter your email" placeholder="Enter your email" required>
-                      </label>
-                    </div>
-                    <div class="sign-in__item custom-input custom-input--primary" data-validate-type="password" data-required data-password-length="8">
-                      <label>
-                        <span class="custom-input__label custom-input__label--primary visually-hidden">Enter your password</span>
-                        <input type="password" name="Enter your password" placeholder="Enter your password" required>
-                      </label>
-                    </div>
-                    <button class="sign-in__button-submit" type="submit" name="Log-in">Log in</button>
-                  </form>
+                <div class="sign-in__content tabs__content" data-tabs="content">
+                  <div class="sign-in__list tabs__element" data-tabs="element">
+                    <form action="#" method="post" autocomplete="off">
+                      <div class="sign-in__item custom-input custom-input--primary" data-validate-type="text" data-limitation="name" data-required>
+                        <label>
+                          <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;name</span>
+                          <input type="text" name="name" placeholder="Your name" pattern="^[а-яА-ЯёЁa-zA-Z\-]+$" required>
+                        </label>
+                      </div>
+                      <div class="custom-input sign-in__item custom-input--primary" data-validate-type="email" data-required data-email-length="18">
+                        <label>
+                          <span class="custom-input__label custom-input__label--primary visually-hidden">Email</span>
+                          <input placeholder="fitnesstracker@mail.com" id="Email" type="email" name="user-email" aria-invalid="true" required>
+                        </label>
+                      </div>
+                      <div class="custom-input sign-in__item custom-input--primary" data-validate-type="password" data-required data-password-length="8">
+                        <label>
+                          <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;password</span>
+                          <input placeholder="Create your password" type="password" name="password" pattern="[0-9a-fA-F]{4,8}" maxlength="8" required>
+                        </label>
+                      </div>
+                      <div class="custom-select sign-in__item custom-select--primary" data-select data-validate-type="select" data-name="tariff__plan" data-id="tariff__plan" data-required>
+                        <span class="custom-select__label custom-select__label--primary">Select tariff plan</span>
+                        <button class="custom-select__button custom-select__button--primary" type="button" aria-label="Select one of the options">
+                          <span class="custom-select__text"></span>
+                          <span class="custom-select__icon custom-select__icon--primary"></span>
+                        </button>
+                        <ul class="custom-select__list custom-select__list--primary" role="listbox">
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Free plan</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Basic</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Advanced</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Most Advanced</li>
+                        </ul>
+                      </div>
+                      <div class="custom-toggle custom-toggle--primary custom-toggle--checkbox" data-validate-type="checkbox" data-required>
+                        <label>
+                          <input type="checkbox" value="user-agreement" name="user-agreement" checked>
+                          <span class="custom-toggle__icon custom-toggle__icon--primary"></span>
+                          <span class="custom-toggle__label">I agree to&nbsp;the&nbsp;processing of&nbsp;personal data</span>
+                        </label>
+                      </div>
+                      <button class="sign-in__button-submit" type="submit">Sign&nbsp;in</button>
+                    </form>
+                  </div>
+                  <div class="log-in tabs__element" data-tabs="element">
+                    <form action="#" method="post" autocomplete="off">
+                      <div class="sign-in__item custom-input custom-input--primary" data-validate-type="email" data-required data-email-length="18">
+                        <label>
+                          <span class="custom-input__label custom-input__label--primary visually-hidden">Enter your&nbsp;email</span>
+                          <input type="email" name="Enter your email" placeholder="Enter your email" required>
+                        </label>
+                      </div>
+                      <div class="sign-in__item custom-input custom-input--primary" data-validate-type="password" data-required data-password-length="8">
+                        <label>
+                          <span class="custom-input__label custom-input__label--primary visually-hidden">Enter your&nbsp;password</span>
+                          <input type="password" name="Enter your password" placeholder="Enter your password" required>
+                        </label>
+                      </div>
+                      <button class="sign-in__button-submit" type="submit" name="Log-in">Log&nbsp;in</button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -425,7 +427,7 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__wrapper">
+        <div class="footer__wrapper container">
           <a class="footer__logo" href="index.html">
             <picture>
               <source media="(min-width: 320px)" srcset="img/logotype.webp">
@@ -444,13 +446,13 @@
             </li>
           </ul>
           <div class="footer__buttons">
-            <button class="footer__button footer__button--left" type="button" aria-label="Download app.">
+            <button class="footer__button footer__button--left btn" type="button" aria-label="Download app.">
               <svg class="footer__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
                 <use href="img/sprite.svg#shape"></use>
               </svg>
               <span>Download</span>
             </button>
-            <button class="footer__button footer__button--right" type="button" aria-label="Download app.">
+            <button class="footer__button footer__button--right btn" type="button" aria-label="Download app.">
               <svg class="footer__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
                 <use href="img/sprite.svg#play-market"></use>
               </svg>
@@ -461,7 +463,6 @@
       </footer>
     </div>
 
-    <!-- Модалки -->
     <div class="modal modal--preload modal-subscription" data-modal="subscription">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
@@ -475,18 +476,17 @@
         </div>
       </div>
     </div>
-
     <div class="modal modal--preload modal-pricing" data-modal="pricing">
       <div class="modal__wrapper modal__wrapper--pricing">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
           <div class="sign-in__content">
-            <h2 class="modal__title">Sign in!</h2>
+            <h2 class="modal__title">Sign&nbsp;in!</h2>
             <div class="modal__sign-in">
               <form action="#" method="post" autocomplete="off">
                 <div class="sign-in__item custom-input custom-input--primary" data-validate-type="text" data-limitation="name" data-required>
                   <label>
-                    <span class="custom-input__label custom-input__label--primary visually-hidden">Your name</span>
+                    <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;name</span>
                     <input type="text" name="name" placeholder="Your name" pattern="^[а-яА-ЯёЁa-zA-Z\-]+$" required>
                   </label>
                 </div>
@@ -498,7 +498,7 @@
                 </div>
                 <div class="custom-input sign-in__item custom-input--primary" data-validate-type="password" data-required data-password-length="8">
                   <label>
-                    <span class="custom-input__label custom-input__label--primary visually-hidden">Your password</span>
+                    <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;password</span>
                     <input placeholder="Create your password" type="password" name="password" pattern="[0-9a-fA-F]{4,8}" maxlength="8" required>
                   </label>
                 </div>
@@ -519,7 +519,7 @@
                   <label>
                     <input type="checkbox" value="user-agreement" name="user-agreement" checked>
                     <span class="custom-toggle__icon custom-toggle__icon--primary"></span>
-                    <span class="custom-toggle__label">I agree to the processing of personal data</span>
+                    <span class="custom-toggle__label">I agree to&nbsp;the&nbsp;processing of&nbsp;personal data</span>
                   </label>
                 </div>
                 <button class="sign-in__button-submit" type="submit">Sign in</button>

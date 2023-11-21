@@ -1,0 +1,23 @@
+.btn {
+  font-family: $ff-montserrat;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: 0.45px;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+  padding: 13px 32px;
+  height: 52px;
+
+  display: flex;
+  flex-direction: row;
+  border: none;
+  column-gap: 9px;
+
+  @include vp-1199 {
+    font-size: 90%;
+    padding: 13px 32px;
+    height: 49px;
+  }
+}

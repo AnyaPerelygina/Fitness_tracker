@@ -11,6 +11,11 @@
   @include vp-1199 {
     padding: 50px 60px;
   }
+
+  @include vp-767 {
+    padding: 60px 15px 40px;
+    gap: 30px;
+  }
 }
 
 .feedback__title {
@@ -21,12 +26,20 @@
   @include vp-1199 {
     margin: 0 0 40px;
   }
+
+  @include vp-767 {
+    margin: 0;
+  }
 }
 
 .feedback__list {
   display: flex;
   flex-direction: row;
-  column-gap: 30px;
+  gap: 30px;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
 }
 
 .feedback__card {
@@ -74,5 +87,9 @@
 
   @include vp-1199 {
     font-size: 18px;
+  }
+
+  @include vp-767 {
+    padding: 5px 0;
   }
 }

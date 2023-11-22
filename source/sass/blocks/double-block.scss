@@ -14,4 +14,9 @@
     flex-direction: column;
     gap: 70px;
   }
+
+  @include vp-767 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }

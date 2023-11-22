@@ -57,4 +57,9 @@
     width: 85%;
     background-size: 161px 43px;
   }
+
+  @include vp-767 {
+    width: 100%;
+    background-size: 100% 100%;
+  }
 }

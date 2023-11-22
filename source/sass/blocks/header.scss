@@ -23,11 +23,21 @@
   @include vp-1199 {
     padding: 19px 60px;
   }
+
+  @include vp-767 {
+    min-width: 320px;
+    width: 100%;
+    padding: 20px 15px;
+  }
 }
 
 .header__logo {
   width: 52px;
   height: 52px;
+
+  @include vp-767 {
+    z-index: 2;
+  }
 }
 
 .header__nav {
@@ -46,6 +56,16 @@
   @include vp-1199 {
     right: 50px;
     width: 212px;
+  }
+
+  @include vp-767 {
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    min-width: 320px;
+    border-radius: 0  0 15px 15px;
+    padding: 100px 20px 20px;
   }
 }
 

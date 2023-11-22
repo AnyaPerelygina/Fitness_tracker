@@ -37,6 +37,14 @@
       }
     }
   }
+
+  @include vp-767 {
+    background-size: 290px 50px;
+
+    input {
+      width: 290px;
+    }
+  }
 }
 
 .form__button {
@@ -62,5 +70,10 @@
     background-size: 277px 50px;
     width: 277px;
     height: 50px;
+  }
+
+  @include vp-767 {
+    background-size: 290px 50px;
+    width: 290px;
   }
 }

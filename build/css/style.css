@@ -1582,14 +1582,6 @@ button,
   height: 100%;
   cursor: pointer;
 }
-.modal__content {
-  position: relative;
-  background-image: url("../img/user-form/form-background.webp");
-  background-repeat: no-repeat;
-  height: 550px;
-  width: 483px;
-  padding: 40px 40px 44px;
-}
 .modal__close-btn {
   position: absolute;
   top: 22px;
@@ -1604,6 +1596,12 @@ button,
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+}
+@media (max-width: 767px) {
+  .modal__close-btn {
+    top: 14px;
+    right: 14px;
+  }
 }
 .modal--responsive .modal__content {
   width: 100%;
@@ -1637,18 +1635,64 @@ button,
   margin: 0 0 40px;
   padding: 0;
 }
+@media (max-width: 767px) {
+  .modal__title {
+    font-size: 35px;
+  }
+}
 
 .modal-subscription p {
   font-family: "Permanent Marker", "Arial", sans-serif;
-  font-size: 50px;
+  font-size: 33px;
   font-style: normal;
   font-weight: 400;
-  line-height: 70px;
+  line-height: 30px;
   letter-spacing: 2px;
-  margin: 150px auto 0;
+  margin: 30px auto 0;
   padding: 0;
   max-width: 300px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .modal-subscription p {
+    font-size: 30px;
+    line-height: 27px;
+  }
+}
+
+.modal-subscription .modal__content {
+  position: relative;
+  background-image: url("../img/about-card/about-card-yellow.webp");
+  background-repeat: no-repeat;
+  height: 187px;
+  width: 340px;
+  padding: 40px 20px 20px;
+  background-size: 340px 187px;
+}
+@media (max-width: 767px) {
+  .modal-subscription .modal__content {
+    width: 240px;
+    background-size: 240px 187px;
+  }
+}
+
+.modal-pricing .modal__content {
+  position: relative;
+  background-image: url("../img/user-form/form-background.webp");
+  background-repeat: no-repeat;
+  height: 548;
+  width: 483px;
+  padding: 40px 40px 44px;
+}
+@media (max-width: 767px) {
+  .modal-pricing .modal__content {
+    background-image: none;
+    width: 320px;
+    padding: 20px 10px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+  }
 }
 
 .custom-input,
@@ -2039,6 +2083,7 @@ input[name="Enter your password"]::placeholder {
   position: absolute;
   top: 50%;
   left: 10px;
+  margin: 0 0 0 10px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -3744,6 +3789,9 @@ input[name="Enter your password"]::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .bonus__button--left {
   background-image: url("../img/bonus/bonus-btn-left.webp");
@@ -3765,6 +3813,11 @@ input[name="Enter your password"]::placeholder {
 @media (max-width: 767px) {
   .bonus__button--right {
     background-size: 100% 100%;
+  }
+}
+@media (max-width: 767px) {
+  .bonus__button {
+    width: unset;
   }
 }
 

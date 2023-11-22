@@ -39,10 +39,6 @@
     width: 100%;
     min-height: 100%;
     padding: 60px 40px;
-
-    // @include vp-767 {
-    //   padding: 60px 16px;
-    // }
   }
 
   &__overlay {
@@ -56,20 +52,21 @@
     cursor: pointer;
   }
 
-  &__content {
-    position: relative;
+  // &__content {
+  //   position: relative;
 
-    background-image: url('../img/user-form/form-background.webp');
-    background-repeat: no-repeat;
-    height: 550px;
-    width: 483px;
-    padding: 40px 40px 44px;
+  //   background-image: url('../img/about-card/about-card-yellow.png');
+  //   background-repeat: no-repeat;
+  //   height: 187px;
+  //   width: 340px;
+  //   padding: 40px 20px 20px;
+  //   background-size: 340px 187px;
 
-    // @include vp-767 {
-    //   width: 100%;
-    //   padding: 20px;
-    // }
-  }
+  //   @include vp-767 {
+  //     width: 240px;
+  //     background-size: 240px 187px;
+  //   }
+  // }
 
   &__close-btn {
     position: absolute;
@@ -87,6 +84,11 @@
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
+
+    @include vp-767 {
+      top: 14px;
+      right: 14px;
+    }
   }
 
   &--responsive {
@@ -132,19 +134,66 @@
   color: $color-tomato;
   margin: 0 0 40px;
   padding: 0;
+
+  @include vp-767 {
+    font-size: 35px;
+  }
 }
 
 .modal-subscription {
   p {
     font-family: $ff-permanent;
-    font-size: 50px;
+    font-size: 33px;
     font-style: normal;
     font-weight: 400;
-    line-height: 70px;
+    line-height: 30px;
     letter-spacing: 2px;
-    margin: 150px auto 0;
+    margin: 30px auto 0;
     padding: 0;
     max-width: 300px;
     text-align: center;
+
+    @include vp-767 {
+      font-size: 30px;
+      line-height: 27px;
+    }
+  }
+}
+
+.modal-subscription .modal {
+  &__content {
+    position: relative;
+
+    background-image: url('../img/about-card/about-card-yellow.webp');
+    background-repeat: no-repeat;
+    height: 187px;
+    width: 340px;
+    padding: 40px 20px 20px;
+    background-size: 340px 187px;
+
+    @include vp-767 {
+      width: 240px;
+      background-size: 240px 187px;
+    }
+  }
+}
+
+.modal-pricing .modal {
+  &__content {
+    position: relative;
+    background-image: url('../img/user-form/form-background.webp');
+    background-repeat: no-repeat;
+    height: 548;
+    width: 483px;
+    padding: 40px 40px 44px;
+
+    @include vp-767 {
+      background-image: none;
+      width: 320px;
+      padding: 20px 10px;
+      background-color: $color-default-white;
+      border: 2px solid $color-default-black;
+      border-radius: 10px;
+    }
   }
 }

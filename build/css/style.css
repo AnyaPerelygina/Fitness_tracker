@@ -2773,6 +2773,8 @@ input[name="Enter your password"]::placeholder {
 @media (max-width: 1199px) {
   .about__slide p {
     font-size: 14px;
+    padding: 0;
+    margin: 11px 0 0;
   }
 }
 

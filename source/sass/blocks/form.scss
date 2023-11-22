@@ -14,7 +14,7 @@
   background-image: url('../img/subscription-form/subscription-field.webp');
   border: none;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 277px 50px;
 
   input {
     background-color: transparent;
@@ -55,12 +55,12 @@
 
   background-image: url('../img/subscription-form/subscription-btn.webp');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 189px 48px;
 
   @include vp-1199 {
     font-size: 14px;
-    background-size: 260px 50px;
-    width: 260px;
+    background-size: 277px 50px;
+    width: 277px;
     height: 50px;
   }
 }

@@ -48,12 +48,13 @@
   background-image: url('../img/subscription/subscription-btn.webp');
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: contain;
+  background-size: 217px 53px;;
   cursor: pointer;
 
   @include vp-1199 {
     font-size: 14px;
     padding: 13px 23px 18px;
     width: 85%;
+    background-size: 161px 43px;
   }
 }

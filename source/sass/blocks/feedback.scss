@@ -6,7 +6,11 @@
   max-width: 1200px;
   margin: 0 auto;
   flex-direction: column;
-  padding: 60px;
+  padding: 156px 0;
+
+  @include vp-1199 {
+    padding: 50px 60px;
+  }
 }
 
 .feedback__title {
@@ -60,7 +64,7 @@
 
 .feedback__card-title {
   margin: 0;
-  padding: 16px 0 5px;
+  padding: 18px 0 5px;
   font-family: $ff-montserrat;
   font-size: 24px;
   font-style: normal;

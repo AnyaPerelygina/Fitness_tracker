@@ -3,7 +3,7 @@
 }
 
 .pricing__wrapper {
-  padding-top: 80px;
+  padding-top: 47px;
   padding-bottom: 80px;
   flex-direction: column;
 
@@ -16,7 +16,7 @@
     line-height: 145.4%;
     letter-spacing: 0.5px;
     padding: 0;
-    margin: 0 0 15px;
+    margin: 0 0 20px;
 
     @include vp-1199 {
       font-size: 16px;
@@ -31,7 +31,7 @@
 
 .pricing__title {
   padding: 0;
-  margin: 0 0 60px;
+  margin: 0 0 63px;
 
   @include vp-1199 {
     margin: 0 0 30px;
@@ -51,7 +51,7 @@
 .pricing__nav {
   position: relative;
   background-image: url('../img/subscription/tab-subscription.webp');
-  background-size: 277px 60px;
+  background-size: 275px 60px;
   background-repeat: no-repeat;
   margin: 0 0 50px;
 

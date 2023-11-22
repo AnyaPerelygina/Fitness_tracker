@@ -1507,16 +1507,19 @@ button,
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 120px;
+  padding-right: 120px;
+  padding-left: 120px;
 }
 @media (max-width: 1199px) {
   .container {
-    padding: 0 60px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 }
 @media (max-width: 767px) {
   .container {
-    padding: 0 15px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -2440,7 +2443,7 @@ input[name="Enter your password"]::placeholder {
 }
 
 .hero__text {
-  padding: 163px 0 263px;
+  padding: 163px 0 265px;
 }
 .hero__text p {
   font-size: 18px;
@@ -2648,7 +2651,7 @@ input[name="Enter your password"]::placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 80px 0 44px;
+  padding: 88px 0 43px;
   overflow: hidden;
   position: relative;
 }
@@ -2762,7 +2765,7 @@ input[name="Enter your password"]::placeholder {
   line-height: normal;
   letter-spacing: 0.5px;
   margin: 0;
-  padding: 10px 0 0 0;
+  padding: 11px 0 0 0;
   -ms-grid-column-span: 2;
   grid-column: span 2;
   color: #ffffff;
@@ -2873,7 +2876,7 @@ input[name="Enter your password"]::placeholder {
 
 .subscription__title {
   padding: 0;
-  margin: 0 0 55px;
+  margin: 0 0 77px;
 }
 @media (max-width: 1199px) {
   .subscription__title {
@@ -2908,7 +2911,7 @@ input[name="Enter your password"]::placeholder {
   background-image: url("../img/subscription-form/subscription-field.webp");
   border: none;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 277px 50px;
 }
 .form__email input {
   background-color: transparent;
@@ -2999,13 +3002,13 @@ input[name="Enter your password"]::placeholder {
   cursor: pointer;
   background-image: url("../img/subscription-form/subscription-btn.webp");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 189px 48px;
 }
 @media (max-width: 1199px) {
   .form__button {
     font-size: 14px;
-    background-size: 260px 50px;
-    width: 260px;
+    background-size: 277px 50px;
+    width: 277px;
     height: 50px;
   }
 }
@@ -3021,7 +3024,12 @@ input[name="Enter your password"]::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 60px;
+  padding: 156px 0;
+}
+@media (max-width: 1199px) {
+  .feedback__wrapper {
+    padding: 50px 60px;
+  }
 }
 
 .feedback__title {
@@ -3083,7 +3091,7 @@ input[name="Enter your password"]::placeholder {
 
 .feedback__card-title {
   margin: 0;
-  padding: 16px 0 5px;
+  padding: 18px 0 5px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -3155,7 +3163,7 @@ input[name="Enter your password"]::placeholder {
   background-image: url("../img/subscription/subscription-btn.webp");
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: contain;
+  background-size: 217px 53px;
   cursor: pointer;
 }
 @media (max-width: 1199px) {
@@ -3163,6 +3171,7 @@ input[name="Enter your password"]::placeholder {
     font-size: 14px;
     padding: 13px 23px 18px;
     width: 85%;
+    background-size: 161px 43px;
   }
 }
 
@@ -3171,7 +3180,7 @@ input[name="Enter your password"]::placeholder {
 }
 
 .pricing__wrapper {
-  padding-top: 80px;
+  padding-top: 47px;
   padding-bottom: 80px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -3187,7 +3196,7 @@ input[name="Enter your password"]::placeholder {
   line-height: 145.4%;
   letter-spacing: 0.5px;
   padding: 0;
-  margin: 0 0 15px;
+  margin: 0 0 20px;
 }
 @media (max-width: 1199px) {
   .pricing__wrapper p {
@@ -3203,7 +3212,7 @@ input[name="Enter your password"]::placeholder {
 
 .pricing__title {
   padding: 0;
-  margin: 0 0 60px;
+  margin: 0 0 63px;
 }
 @media (max-width: 1199px) {
   .pricing__title {
@@ -3232,7 +3241,7 @@ input[name="Enter your password"]::placeholder {
 .pricing__nav {
   position: relative;
   background-image: url("../img/subscription/tab-subscription.webp");
-  background-size: 277px 60px;
+  background-size: 275px 60px;
   background-repeat: no-repeat;
   margin: 0 0 50px;
 }
@@ -3510,7 +3519,7 @@ input[name="Enter your password"]::placeholder {
   background-image: url("../img/user-form/form-background.webp");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 550px;
+  height: 548px;
   padding: 40px 40px 44px;
 }
 @media (max-width: 1199px) {
@@ -3560,7 +3569,6 @@ input[name="Enter your password"]::placeholder {
 
 .sign-in__item {
   background-image: url("../img//user-form/field-1.webp");
-  background-size: contain;
   border: none;
   background-size: 403px 50px;
   background-repeat: no-repeat;

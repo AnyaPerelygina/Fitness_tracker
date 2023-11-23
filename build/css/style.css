@@ -2415,6 +2415,7 @@ input[name="Enter your password"]::placeholder {
     min-width: 320px;
     border-radius: 0 0 15px 15px;
     padding: 100px 20px 20px;
+    border-top: none;
   }
 }
 
@@ -2694,6 +2695,9 @@ input[name="Enter your password"]::placeholder {
   .hero__button--right {
     background-size: 100% 100%;
   }
+}
+.hero__button span {
+  color: #000000;
 }
 
 .footer {
@@ -3025,6 +3029,13 @@ input[name="Enter your password"]::placeholder {
     padding: 5px;
   }
 }
+@media (max-width: 767px) {
+  .about__button-prev,
+.about__button-next {
+    height: 46px;
+    width: 45px;
+  }
+}
 
 @media (max-width: 1199px) {
   .about__button-icon {
@@ -3207,10 +3218,10 @@ input[name="Enter your password"]::placeholder {
 }
 @media (max-width: 767px) {
   .form__email {
-    background-size: 290px 50px;
+    background-size: 100% 100%;
   }
   .form__email input {
-    width: 290px;
+    width: 100%;
   }
 }
 
@@ -3241,8 +3252,8 @@ input[name="Enter your password"]::placeholder {
 }
 @media (max-width: 767px) {
   .form__button {
-    background-size: 290px 50px;
-    width: 290px;
+    background-size: 100% 100%;
+    width: 100%;
   }
 }
 
@@ -3412,6 +3423,7 @@ input[name="Enter your password"]::placeholder {
   font-weight: 900;
   line-height: 100%;
   letter-spacing: 0.45px;
+  color: #000000;
   padding: 17px 23px 18px;
   width: 100%;
   border: none;
@@ -3540,6 +3552,7 @@ input[name="Enter your password"]::placeholder {
   line-height: 32px;
   letter-spacing: 0.625px;
   text-align: center;
+  color: #000000;
   cursor: pointer;
 }
 @media (max-width: 1199px) {
@@ -3802,6 +3815,7 @@ input[name="Enter your password"]::placeholder {
 @media (max-width: 767px) {
   .bonus__button--left {
     background-size: 100% 100%;
+    width: 100%;
   }
 }
 .bonus__button--right {
@@ -3813,11 +3827,12 @@ input[name="Enter your password"]::placeholder {
 @media (max-width: 767px) {
   .bonus__button--right {
     background-size: 100% 100%;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
   .bonus__button {
-    width: unset;
+    width: 100%;
   }
 }
 
@@ -3850,6 +3865,7 @@ input[name="Enter your password"]::placeholder {
   .double-block__wrapper {
     padding-top: 50px;
     padding-bottom: 50px;
+    gap: 40px;
   }
 }
 
@@ -3869,7 +3885,8 @@ input[name="Enter your password"]::placeholder {
   .sign-in {
     background-image: none;
     width: 290px;
-    padding: 0;
+    padding: 30px 0 0 0;
+    border-top: 1px solid #fa6648;
     height: auto;
   }
 }

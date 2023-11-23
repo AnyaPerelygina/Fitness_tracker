@@ -6,7 +6,6 @@ const buttonPrev = document.querySelector('.about__button-prev');
 let mySwiper;
 
 const createAboutSlider = () => {
-  // if (sliderAbout && innerWidth > 1199) {
   mySwiper = new Swiper(sliderAbout, {
     loop: true,
     allowTouchMove: true,
@@ -35,7 +34,6 @@ const createAboutSlider = () => {
     },
   });
 };
-// };
 
 const destroySwiperIfNeeded = () => {
   if (window.innerWidth <= 1200 && mySwiper) {

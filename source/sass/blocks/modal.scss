@@ -52,22 +52,6 @@
     cursor: pointer;
   }
 
-  // &__content {
-  //   position: relative;
-
-  //   background-image: url('../img/about-card/about-card-yellow.png');
-  //   background-repeat: no-repeat;
-  //   height: 187px;
-  //   width: 340px;
-  //   padding: 40px 20px 20px;
-  //   background-size: 340px 187px;
-
-  //   @include vp-767 {
-  //     width: 240px;
-  //     background-size: 240px 187px;
-  //   }
-  // }
-
   &__close-btn {
     position: absolute;
     top: 22px;
@@ -96,16 +80,6 @@
       width: 100%;
     }
   }
-
-  // &--fit-content {
-  //   .modal__content {
-  //     width: auto;
-
-  //     @include vp-767 {
-  //       width: 100%;
-  //     }
-  //   }
-  // }
 
   &--no-scale {
     transform: none;

@@ -88,6 +88,7 @@
   line-height: 32px;
   letter-spacing: 0.625px;
   text-align: center;
+  color: $color-default-black;
   cursor: pointer;
 
   @include vp-1199 {

@@ -2700,6 +2700,10 @@ input[name="Enter your password"]::placeholder {
   color: #000000;
 }
 
+.hero__button-icon {
+  color: #000000;
+}
+
 .footer {
   background-color: #7711dd;
 }

@@ -340,13 +340,13 @@
               <p>Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat ea exercitation.</p>
               <div class="bonus__buttons">
                 <button class="bonus__button bonus__button--left btn" type="button" aria-label="Download app.">
-                  <svg class="footer__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
+                  <svg width="25" height="25" aria-hidden="true" focusable="false">
                     <use href="img/sprite.svg#shape"></use>
                   </svg>
                   <span>Download</span>
                 </button>
                 <button class="bonus__button bonus__button--right btn" type="button" aria-label="Download app.">
-                  <svg class="footer__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
+                  <svg width="25" height="25" aria-hidden="true" focusable="false">
                     <use href="img/sprite.svg#play-market"></use>
                   </svg>
                   <span>Download</span>
@@ -480,29 +480,29 @@
       <div class="modal__wrapper modal__wrapper--pricing">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <div class="sign-in__content">
+          <div>
             <h2 class="modal__title">Sign&nbsp;in!</h2>
             <div class="modal__sign-in">
               <form action="#" method="post" autocomplete="off">
-                <div class="sign-in__item custom-input custom-input--primary" data-validate-type="text" data-limitation="name" data-required>
+                <div class="modal__item custom-input custom-input--primary" data-validate-type="text" data-limitation="name" data-required>
                   <label>
                     <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;name</span>
                     <input type="text" name="name" placeholder="Your name" pattern="^[а-яА-ЯёЁa-zA-Z\-]+$" required>
                   </label>
                 </div>
-                <div class="custom-input sign-in__item custom-input--primary" data-validate-type="email" data-required data-email-length="18">
+                <div class="custom-input modal__item custom-input--primary" data-validate-type="email" data-required data-email-length="18">
                   <label>
                     <span class="custom-input__label custom-input__label--primary visually-hidden">Email</span>
                     <input placeholder="fitnesstracker@mail.com" type="email" name="user-email" aria-invalid="true" required>
                   </label>
                 </div>
-                <div class="custom-input sign-in__item custom-input--primary" data-validate-type="password" data-required data-password-length="8">
+                <div class="custom-input modal__item custom-input--primary" data-validate-type="password" data-required data-password-length="8">
                   <label>
                     <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;password</span>
                     <input placeholder="Create your password" type="password" name="password" pattern="[0-9a-fA-F]{4,8}" maxlength="8" required>
                   </label>
                 </div>
-                <div class="custom-select sign-in__item custom-select--primary" data-select data-validate-type="select" data-name="tariff__plan" data-id="tariff__plan" data-required>
+                <div class="custom-select modal__item custom-select--primary" data-select data-validate-type="select" data-name="tariff__plan" data-id="tariff__plan" data-required>
                   <span class="custom-select__label custom-select__label--primary">Select tariff plan</span>
                   <button class="custom-select__button custom-select__button--primary" type="button" aria-label="Select one of the options">
                     <span class="custom-select__text"></span>
@@ -522,7 +522,7 @@
                     <span class="custom-toggle__label">I agree to&nbsp;the&nbsp;processing of&nbsp;personal data</span>
                   </label>
                 </div>
-                <button class="sign-in__button-submit" type="submit">Sign in</button>
+                <button class="modal__button-submit" type="submit">Sign in</button>
               </form>
             </div>
           </div>

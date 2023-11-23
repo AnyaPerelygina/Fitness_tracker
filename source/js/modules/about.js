@@ -37,19 +37,4 @@ const createAboutSlider = () => {
   return mySwiper;
 };
 
-// const destroySwiperIfNeeded = () => {
-//   if (window.innerWidth <= 1200 && mySwiper) {
-//     mySwiper.destroy();
-//     document.querySelector('.about__swiper').style.display = 'block';
-//   } else if (mySwiper && !mySwiper.initialized) {
-//     createAboutSlider();
-//   }
-// };
-
-// const handleResize = () => {
-//   destroySwiperIfNeeded();
-// };
-
-// window.addEventListener('resize', handleResize);
-
 export {createAboutSlider};

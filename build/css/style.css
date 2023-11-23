@@ -3340,16 +3340,18 @@ input[name="Enter your password"]::placeholder {
     font-size: 14px;
   }
 }
-.feedback__card data {
+.feedback__card span {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 145.4%;
   letter-spacing: 0.5px;
+  padding: 0;
+  margin: 0;
 }
 @media (max-width: 1199px) {
-  .feedback__card data {
+  .feedback__card span {
     font-size: 14px;
   }
 }

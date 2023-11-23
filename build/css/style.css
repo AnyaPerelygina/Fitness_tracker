@@ -3385,6 +3385,11 @@ input[name="Enter your password"]::placeholder {
     width: 230px;
   }
 }
+@media (max-width: 767px) {
+  .card {
+    width: 100%;
+  }
+}
 
 .card__list {
   margin: 30px 0;
@@ -3595,6 +3600,11 @@ input[name="Enter your password"]::placeholder {
 @media (max-width: 1199px) {
   .pricing__content {
     width: unset;
+  }
+}
+@media (max-width: 767px) {
+  .pricing__content {
+    width: 100%;
   }
 }
 

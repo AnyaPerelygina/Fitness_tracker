@@ -50,10 +50,10 @@
   padding: 17px 23px 18px;
   width: 100%;
   border: none;
-  background-image: url('../img/subscription/subscription-btn.webp');
+  background-image: url("../img/subscription/subscription-btn.webp");
   background-repeat: no-repeat;
   background-color: transparent;
-  background-size: 217px 53px;;
+  background-size: 217px 53px;
   cursor: pointer;
 
   @include vp-1199 {
@@ -66,5 +66,21 @@
   @include vp-767 {
     width: 100%;
     background-size: 100% 100%;
+  }
+
+  &:hover,
+  &focus,
+  &:focus-visible {
+    transform: scale(1.05);
+    outline: none;
+  }
+
+  &:active {
+    color: $color-blue-violet;
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.2;
   }
 }

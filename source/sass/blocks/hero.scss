@@ -135,6 +135,16 @@
   span {
     color: $color-default-black;
   }
+
+  &:active {
+    span {
+      color: $color-blue-violet;
+    }
+
+    .hero__button-icon {
+      color: $color-blue-violet;
+    }
+  }
 }
 
 .hero__button-icon {

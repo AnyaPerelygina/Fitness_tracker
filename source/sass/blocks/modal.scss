@@ -73,6 +73,17 @@
       top: 14px;
       right: 14px;
     }
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      transform: scale(1.05);
+    }
+
+    &:disabled {
+      opacity: 0.2;
+    }
   }
 
   &--responsive {
@@ -230,5 +241,22 @@
   @include vp-767 {
     background-size: 100% 100%;
     width: 290px;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    color: $color-default-black;
+    opacity: 0.9;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.2;
   }
 }

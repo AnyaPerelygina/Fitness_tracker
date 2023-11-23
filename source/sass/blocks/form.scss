@@ -11,16 +11,27 @@
 }
 
 .form__email {
-  background-image: url('../img/subscription-form/subscription-field.webp');
+  background-image: url("../img/subscription-form/subscription-field.webp");
   border: none;
   background-repeat: no-repeat;
   background-size: 277px 50px;
 
   input {
-    background-color: transparent;
-    border: none;
-    width: 277px;
-    height: 50px;
+  background-color: transparent;
+  border: none;
+  width: 277px;
+  height: 50px;
+
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:active {
+      outline: none;
+    }
+
+    &:disabled {
+      opacity: 0.2;
+    }
 
     &::placeholder {
       font-family: $ff-montserrat;
@@ -45,6 +56,22 @@
       width: 100%;
     }
   }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    opacity: 0.9;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
 }
 
 .form__button {
@@ -61,7 +88,7 @@
   height: 48px;
   cursor: pointer;
 
-  background-image: url('../img/subscription-form/subscription-btn.webp');
+  background-image: url("../img/subscription-form/subscription-btn.webp");
   background-repeat: no-repeat;
   background-size: 189px 48px;
 
@@ -75,5 +102,22 @@
   @include vp-767 {
     background-size: 100% 100%;
     width: 100%;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    color: $color-default-black;
+    opacity: 0.9;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.2;
   }
 }

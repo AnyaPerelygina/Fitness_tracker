@@ -176,12 +176,12 @@
                 Nisi ullamco tempor tempor nulla labore ad labore sit eu duis. Ut et esse cupidatat consequat.
               </p>
               <div class="subscription__form form" >
-                <form action="#" method="post" autocomplete="off" novalidate>
-                  <div class="form__email" data-validate-type="email" data-on-input-validate data-required>
-                    <label class="visually-hidden">Email</label>
+                <form action="#" method="post" autocomplete="off">
+                  <div class="form__email" data-validate-type="email" data-required data-email-length="18">
+                    <label class="custom-input__label custom-input__label--primary visually-hidden">Email</label>
                     <input placeholder="Email" type="email" name="email" aria-invalid="true" required>
                   </div>
-                  <button class="form__button" type="submit" data-open-modal="subscription">Let’s&nbsp;GO!</button>
+                  <button class="form__button" type="submit">Let’s&nbsp;GO!</button>
                 </form>
               </div>
             </div>
@@ -197,7 +197,7 @@
           <div class="feedback__wrapper container">
             <h2 class="feedback__title title">Stories of our users</h2>
             <div class="feedback__list">
-              <div class="feedback__card">
+              <a class="feedback__card" href="#">
                 <picture>
                   <source media="(min-width: 320px)" srcset="img/stories-card/stories-card-green.webp">
                   <img src="img/stories-card/stories-card-green.webp" width="380" height="265" alt="Сover card.">
@@ -205,8 +205,8 @@
                 <h3 class="feedback__card-title">Stories of our users</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <span>17.10.20</span>
-              </div>
-              <div class="feedback__card">
+              </a>
+              <a class="feedback__card" href="#">
                 <picture>
                   <source media="(min-width: 320px)" srcset="img/stories-card/stories-card-purple.webp">
                   <img src="img/stories-card/stories-card-green.webp" width="380" height="265" alt="Сover card.">
@@ -214,8 +214,8 @@
                 <h3 class="feedback__card-title">Stories of our users</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <span>17.10.20</span>
-              </div>
-              <div class="feedback__card">
+              </a>
+              <a class="feedback__card" href="#">
                 <picture>
                   <source media="(min-width: 320px)" srcset="img/stories-card/stories-card-green.webp">
                   <img src="img/stories-card/stories-card-green.webp" width="380" height="265" alt="Сover card.">
@@ -223,7 +223,7 @@
                 <h3 class="feedback__card-title">Stories of our users</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <span>17.10.20</span>
-              </div>
+              </a>
             </div>
           </div>
         </section>

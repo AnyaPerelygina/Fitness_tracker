@@ -117,6 +117,10 @@
   &:active {
     opacity: 0.5;
   }
+
+  &:disabled {
+    opacity: 0.2;
+  }
 }
 
 .pricing__button.is-active {

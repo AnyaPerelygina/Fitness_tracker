@@ -16,4 +16,16 @@
 
 .social-list__icon {
   color: $color-default-white;
+
+  &:hover,
+  &focus,
+  &:focus-visible {
+    opacity: 0.5;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-tomato;
+    opacity: 0.2;
+  }
 }

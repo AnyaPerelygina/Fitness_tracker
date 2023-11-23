@@ -20,4 +20,19 @@
     padding: 13px 32px;
     height: 49px;
   }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
 }

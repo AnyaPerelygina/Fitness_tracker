@@ -11,15 +11,20 @@
   }
 }
 
-// .nav__item {
-//   @include vp-1199 {
-//     font-size: 16px;
-//   }
-// }
-
 .nav__link {
   @include vp-767 {
     font-weight: 500;
+  }
+
+  &:hover,
+  &focus,
+  &:focus-visible {
+    color: $color-blue-violet;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }
 

@@ -1,5 +1,5 @@
 .sign-in {
-  background-image: url('../img/user-form/form-background.webp');
+  background-image: url("../img/user-form/form-background.webp");
   background-size: contain;
   background-repeat: no-repeat;
   height: 548px;
@@ -50,6 +50,21 @@
   @include vp-1199 {
     font-size: 20px;
   }
+
+  &:hover,
+  &focus,
+  &:focus-visible {
+    transform: scale(1.05);
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
 }
 
 .sign-in__button.is-active {
@@ -57,7 +72,7 @@
 }
 
 .sign-in__item {
-  background-image: url('../img//user-form/field-1.webp');
+  background-image: url("../img//user-form/field-1.webp");
   border: none;
   background-size: 403px 50px;
   background-repeat: no-repeat;
@@ -87,6 +102,17 @@
   @include vp-767 {
     background-size: 290px 50px;
   }
+
+  // &:hover,
+  // &focus,
+  // &:focus-visible {
+  //   transform: scale(1.01);
+  //   outline: none;
+  // }
+
+  // &:disabled {
+  //   opacity: 0.2;
+  // }
 }
 
 .sign-in__button-submit {
@@ -100,7 +126,7 @@
   text-align: center;
   border: none;
   background-color: transparent;
-  background-image: url('../img/user-form/user-form-btn.webp');
+  background-image: url("../img/user-form/user-form-btn.webp");
   background-size: 403px 50px;
   width: 403px;
   min-height: 50px;
@@ -113,5 +139,22 @@
   @include vp-767 {
     background-size: 100% 100%;
     width: 290px;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    color: $color-default-black;
+    opacity: 0.9;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.2;
   }
 }

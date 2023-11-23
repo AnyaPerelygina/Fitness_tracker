@@ -1,7 +1,6 @@
 .custom-input,
 .custom-textarea {
   position: relative;
-
   display: flex;
   width: 403px;
   padding: 0;
@@ -26,10 +25,8 @@
       flex-grow: 1;
       max-width: 403px;
       min-height: 50px;
-      margin-left: auto;
       margin: 0 0 16px;
-      padding: 0;
-      padding-left: 9px;
+      padding: 0 0 0 9px;
 
       border: none;
       border-radius: 5px;
@@ -40,15 +37,7 @@
       @media screen and (max-width: 767px) {
         max-width: unset;
         width: 100%;
-      }
-
-      // &:hover {
-      //   border: 2px solid rgba(#000000, 0.5);
-      // }
-
-      // &:focus {
-      //   border: 2px solid rgba(#000000, 0.8);
-      // }
+      }   
     }
   }
 
@@ -79,10 +68,10 @@
     textarea {
       border: 2px solid #ff1553;
 
-      &:focus,
-      &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
-      }
+      // &:focus,
+      // &:hover {
+      //   border: 2px solid rgba(#ff1553, 0.5);
+      // }
     }
   }
 
@@ -90,10 +79,10 @@
     input {
       border: 2px solid #22b259;
 
-      &:focus,
-      &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
-      }
+      // &:focus,
+      // &:hover {
+      //   border: 2px solid rgba(#22b259, 0.5);
+      // }
     }
   }
 

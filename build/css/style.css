@@ -3900,7 +3900,7 @@ input[name="Enter your password"]::placeholder {
     background-image: none;
     width: 290px;
     padding: 30px 0 0 0;
-    border-top: 1px solid #fa6648;
+    border-top: 2px solid #fa6648;
     height: auto;
   }
 }

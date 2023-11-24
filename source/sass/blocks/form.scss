@@ -15,6 +15,7 @@
   border: none;
   background-repeat: no-repeat;
   background-size: 277px 50px;
+  user-select: none;
 
   input {
   background-color: transparent;
@@ -47,6 +48,14 @@
         font-size: 16px;
       }
     }
+
+    @include vp-1199 {
+      width: 100%;
+    }
+  }
+
+  @include vp-1199 {
+    background-size: 100% 50px;
   }
 
   @include vp-767 {
@@ -87,6 +96,7 @@
   width: 189px;
   height: 48px;
   cursor: pointer;
+  user-select: none;
 
   background-image: url("../img/subscription-form/subscription-btn.webp");
   background-repeat: no-repeat;
@@ -94,8 +104,8 @@
 
   @include vp-1199 {
     font-size: 14px;
-    background-size: 277px 50px;
-    width: 277px;
+    background-size: 100% 50px;
+    width: 100%;
     height: 50px;
   }
 

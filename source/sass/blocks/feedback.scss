@@ -8,6 +8,10 @@
   flex-direction: column;
   padding: 156px 0;
 
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    padding: 100px 60px;
+  }
+
   @include vp-1199 {
     padding: 50px 60px;
   }
@@ -38,12 +42,18 @@
   gap: 30px;
 
   @include vp-767 {
+    width: 100%;
     flex-direction: column;
   }
 }
 
 .feedback__card {
   max-width: 380px;
+
+  @include vp-767 {
+    width: 100%;
+    max-width: 100%;
+  }
 
   &:hover,
   &:focus,

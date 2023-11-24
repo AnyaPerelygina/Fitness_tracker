@@ -2696,6 +2696,7 @@ input[name="Enter your password"]::placeholder {
 
 @media (max-width: 1199px) {
   .hero__wrapper {
+    max-width: 1000px;
     padding: 30px 60px 0;
   }
 }
@@ -2707,6 +2708,7 @@ input[name="Enter your password"]::placeholder {
 
 .hero__text {
   padding: 163px 0 265px;
+  width: 100%;
 }
 .hero__text p {
   font-size: 18px;
@@ -2715,21 +2717,30 @@ input[name="Enter your password"]::placeholder {
   line-height: 150%;
   letter-spacing: 0.45px;
   color: #ffffff;
-  max-width: 420px;
+  max-width: 550px;
   margin: 0;
   padding: 0 0 50px;
+  min-height: 131px;
 }
 @media (max-width: 1199px) {
   .hero__text p {
-    max-width: 320px;
+    max-width: 50%;
+    min-height: 146px;
     font-size: 16px;
     padding: 0 14px 50px 0;
   }
 }
 @media (max-width: 767px) {
   .hero__text p {
+    max-width: 100%;
+    min-height: unset;
     text-align: center;
     padding: 0 10px 40px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .hero__text {
+    padding: 120px 0 120px;
   }
 }
 @media (max-width: 1199px) {
@@ -2774,6 +2785,13 @@ input[name="Enter your password"]::placeholder {
   top: -27px;
   right: 0;
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .hero__img {
+    width: 648px;
+    top: unset;
+    bottom: 0;
+  }
+}
 @media (max-width: 1199px) {
   .hero__img {
     top: unset;
@@ -2810,6 +2828,7 @@ input[name="Enter your password"]::placeholder {
        -moz-column-gap: unset;
             column-gap: unset;
     row-gap: 15px;
+    width: 50%;
   }
 }
 @media (max-width: 767px) {
@@ -2819,6 +2838,19 @@ input[name="Enter your password"]::placeholder {
   }
 }
 
+.hero__button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media (max-width: 1199px) {
+  .hero__button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media (max-width: 767px) {
   .hero__button {
     -webkit-box-pack: center;
@@ -2832,6 +2864,11 @@ input[name="Enter your password"]::placeholder {
   background-color: transparent;
   background-size: contain;
 }
+@media (max-width: 1199px) {
+  .hero__button--left {
+    background-size: 100% 50px;
+  }
+}
 @media (max-width: 767px) {
   .hero__button--left {
     background-size: 100% 100%;
@@ -2842,6 +2879,11 @@ input[name="Enter your password"]::placeholder {
   background-repeat: no-repeat;
   background-color: transparent;
   background-size: contain;
+}
+@media (max-width: 1199px) {
+  .hero__button--right {
+    background-size: 100% 50px;
+  }
 }
 @media (max-width: 767px) {
   .hero__button--right {
@@ -3008,7 +3050,7 @@ input[name="Enter your password"]::placeholder {
 }
 @media (max-width: 1199px) {
   .about__container {
-    margin: 0 60px;
+    margin: 0;
   }
 }
 @media (max-width: 767px) {
@@ -3274,13 +3316,14 @@ input[name="Enter your password"]::placeholder {
 }
 @media (max-width: 767px) {
   .subscription__text p {
+    max-width: 100%;
     text-align: center;
   }
 }
 
 .subscription__title {
   padding: 0;
-  margin: 0 0 77px;
+  margin: 0 0 30px;
 }
 @media (max-width: 1199px) {
   .subscription__title {
@@ -3327,6 +3370,10 @@ input[name="Enter your password"]::placeholder {
   border: none;
   background-repeat: no-repeat;
   background-size: 277px 50px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .form__email input {
   background-color: transparent;
@@ -3407,6 +3454,16 @@ input[name="Enter your password"]::placeholder {
     font-size: 16px;
   }
 }
+@media (max-width: 1199px) {
+  .form__email input {
+    width: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .form__email {
+    background-size: 100% 50px;
+  }
+}
 @media (max-width: 767px) {
   .form__email {
     background-size: 100% 100%;
@@ -3442,6 +3499,10 @@ input[name="Enter your password"]::placeholder {
   width: 189px;
   height: 48px;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   background-image: url("../img/subscription-form/subscription-btn.webp");
   background-repeat: no-repeat;
   background-size: 189px 48px;
@@ -3449,8 +3510,8 @@ input[name="Enter your password"]::placeholder {
 @media (max-width: 1199px) {
   .form__button {
     font-size: 14px;
-    background-size: 277px 50px;
-    width: 277px;
+    background-size: 100% 50px;
+    width: 100%;
     height: 50px;
   }
 }
@@ -3487,6 +3548,11 @@ input[name="Enter your password"]::placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 156px 0;
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .feedback__wrapper {
+    padding: 100px 60px;
+  }
 }
 @media (max-width: 1199px) {
   .feedback__wrapper {
@@ -3528,6 +3594,7 @@ input[name="Enter your password"]::placeholder {
 }
 @media (max-width: 767px) {
   .feedback__list {
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -3537,6 +3604,12 @@ input[name="Enter your password"]::placeholder {
 
 .feedback__card {
   max-width: 380px;
+}
+@media (max-width: 767px) {
+  .feedback__card {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .feedback__card:hover, .feedback__card:focus, .feedback__card:focus-visible, .feedback__card:active {
   outline: none;
@@ -3601,10 +3674,16 @@ input[name="Enter your password"]::placeholder {
   padding: 30px 30px 53px;
   width: 278px;
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .card {
+    padding: 30px 20px;
+    min-width: 230px;
+  }
+}
 @media (max-width: 1199px) {
   .card {
     padding: 30px 20px;
-    width: 230px;
+    min-width: 200px;
   }
 }
 @media (max-width: 767px) {
@@ -3625,6 +3704,12 @@ input[name="Enter your password"]::placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .card__list {
+    margin: 20px 0;
+    gap: 5px;
+  }
 }
 @media (max-width: 1199px) {
   .card__list {
@@ -3664,12 +3749,18 @@ input[name="Enter your password"]::placeholder {
   background-size: 217px 53px;
   cursor: pointer;
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .card__button {
+    background-size: 100% 53px;
+    width: 87%;
+  }
+}
 @media (max-width: 1199px) {
   .card__button {
     font-size: 14px;
     padding: 13px 23px 18px;
-    width: 85%;
-    background-size: 161px 43px;
+    width: 100%;
+    background-size: 100% 43px;
   }
 }
 @media (max-width: 767px) {
@@ -3727,6 +3818,12 @@ input[name="Enter your password"]::placeholder {
     font-size: 14px;
   }
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .pricing__wrapper {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
 @media (max-width: 1199px) {
   .pricing__wrapper {
     padding-top: 40px;
@@ -3760,6 +3857,10 @@ input[name="Enter your password"]::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (max-width: 1199px) {
   .pricing__tabs {
@@ -3798,6 +3899,10 @@ input[name="Enter your password"]::placeholder {
   text-align: center;
   color: #000000;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (max-width: 1199px) {
   .pricing__button {
@@ -3859,12 +3964,20 @@ input[name="Enter your password"]::placeholder {
   padding: 0;
   list-style-type: none;
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .pricing__list {
+    gap: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media (max-width: 1199px) {
   .pricing__list {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (202px)[2];
-    grid-template-columns: repeat(2, 202px);
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3905,7 +4018,13 @@ input[name="Enter your password"]::placeholder {
   background-repeat: no-repeat;
   background-size: contain;
 }
-@media (max-width: 767px) {
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .pricing__item {
+    background-size: 88% 100%;
+    margin: 0 -20px 0 0;
+  }
+}
+@media (max-width: 1199px) {
   .pricing__item {
     background-size: 100% 100%;
   }
@@ -3918,6 +4037,12 @@ input[name="Enter your password"]::placeholder {
   line-height: 145.4%;
   letter-spacing: 0.5px;
   margin: 0 0 20px;
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .pricing__item h3 {
+    font-size: 16px;
+    margin: 0 0 5px;
+  }
 }
 @media (max-width: 1199px) {
   .pricing__item h3 {
@@ -3933,6 +4058,11 @@ input[name="Enter your password"]::placeholder {
   line-height: 150%;
   letter-spacing: 0.45px;
   margin: 0 0 30px;
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .pricing__item span {
+    font-size: 27px;
+  }
 }
 @media (max-width: 1199px) {
   .pricing__item span {
@@ -4106,6 +4236,11 @@ input[name="Enter your password"]::placeholder {
   padding-top: 72px;
   padding-bottom: 72px;
 }
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .double-block__wrapper {
+    gap: 75px;
+  }
+}
 @media (max-width: 1199px) {
   .double-block__wrapper {
     display: -webkit-box;
@@ -4131,6 +4266,7 @@ input[name="Enter your password"]::placeholder {
   background-size: contain;
   background-repeat: no-repeat;
   height: 548px;
+  width: 584px;
   padding: 40px 40px 44px;
 }
 @media (max-width: 1199px) {
@@ -4141,7 +4277,7 @@ input[name="Enter your password"]::placeholder {
 @media (max-width: 767px) {
   .sign-in {
     background-image: none;
-    width: 290px;
+    width: 100%;
     padding: 30px 0 0 0;
     border-top: 2px solid #fa6648;
     height: auto;
@@ -4150,6 +4286,10 @@ input[name="Enter your password"]::placeholder {
 
 .sign-in__tabs {
   overflow: visible;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .sign-in__nav {
@@ -4184,6 +4324,10 @@ input[name="Enter your password"]::placeholder {
   color: #000000;
   padding: 0;
   margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (max-width: 1199px) {
   .sign-in__button {
@@ -4288,7 +4432,7 @@ input[name="Enter your password"]::placeholder {
 }
 @media (max-width: 767px) {
   .sign-in__item {
-    background-size: 290px 50px;
+    background-size: 100% 50px;
   }
 }
 
@@ -4317,7 +4461,7 @@ input[name="Enter your password"]::placeholder {
 @media (max-width: 767px) {
   .sign-in__button-submit {
     background-size: 100% 100%;
-    width: 290px;
+    width: 100%;
   }
 }
 .sign-in__button-submit:hover, .sign-in__button-submit:focus, .sign-in__button-submit:focus-visible {
@@ -4348,6 +4492,10 @@ input[name="Enter your password"]::placeholder {
   cursor: pointer;
   padding: 13px 32px;
   height: 52px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -3236,6 +3236,8 @@ input[name="Enter your password"]::placeholder {
   border-radius: 10px;
   padding: 10px 10px 5px;
   cursor: pointer;
+  width: 54px;
+  height: 54px;
 }
 .about__button-prev:hover, .about__button-prevfocus, .about__button-prev:focus-visible,
 .about__button-next:hover,

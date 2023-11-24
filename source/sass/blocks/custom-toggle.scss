@@ -126,6 +126,26 @@
     border: 2px solid $color-default-black;
     background-color: $color-amber;
 
+    &:hover,
+    &:hover {
+      border: 2px solid $color-blue-zodiac;
+      background-color: transparent;
+
+      &::before {
+        background-image: url('data:image/svg+xml,\<svg width="35" height="43" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">\<path d="M1 3.5L3.94737 7L9 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>\</svg>');
+      }
+    }
+
+    &:active {
+      border: 2px solid $color-default-black;
+    }
+
+    &:disabled {
+      background-color: transparent;
+      border: 2px solid $color-blue-zodiac;
+      opacity: 0.2;
+    }
+
     &::before {
       width: 17px;
       height: 21px;

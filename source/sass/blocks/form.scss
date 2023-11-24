@@ -22,12 +22,24 @@
   border: none;
   width: 277px;
   height: 50px;
+  padding-left: 20px;
 
     &:hover,
     &:focus,
-    &:focus-visible,
-    &:active {
+    &:focus-visible {
       outline: none;
+
+      &::placeholder {
+        opacity: 0.5;
+      }
+    }
+
+    &:active {
+      padding-left: 20px;
+
+      &::placeholder {
+        color: $color-default-white;
+      }
     }
 
     &:disabled {
@@ -42,7 +54,6 @@
       font-weight: 500;
       line-height: 145.4%;
       letter-spacing: 0.5px;
-      padding-left: 20px;
 
       @include vp-1199 {
         font-size: 16px;
@@ -68,14 +79,10 @@
 
   &:hover,
   &:focus,
-  &:focus-visible {
-    outline: none;
-    transform: scale(1.05);
-  }
-
+  &:focus-visible,
   &:active {
-    opacity: 0.9;
     outline: none;
+    transform: scale(1.01);
   }
 
   &:disabled {
@@ -118,7 +125,7 @@
   &:focus,
   &:focus-visible {
     outline: none;
-    transform: scale(1.05);
+    transform: scale(1.01);
   }
 
   &:active {

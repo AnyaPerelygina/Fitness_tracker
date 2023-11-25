@@ -174,7 +174,8 @@
 
     @include vp-767 {
       background-image: none;
-      width: 320px;
+      min-width: 300px;
+      width: 100%;
       padding: 20px 10px;
       background-color: $color-default-white;
       border: 2px solid $color-default-black;
@@ -212,7 +213,7 @@
   }
 
   @include vp-767 {
-    background-size: 290px 50px;
+    background-size: 100% 50px;
   }
 }
 
@@ -240,7 +241,7 @@
 
   @include vp-767 {
     background-size: 100% 100%;
-    width: 290px;
+    width: 100%;
   }
 
   &:hover,

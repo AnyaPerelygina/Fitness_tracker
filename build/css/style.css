@@ -1696,7 +1696,8 @@ button,
 @media (max-width: 767px) {
   .modal-pricing .modal__content {
     background-image: none;
-    width: 320px;
+    min-width: 300px;
+    width: 100%;
     padding: 20px 10px;
     background-color: #ffffff;
     border: 2px solid #000000;
@@ -1785,7 +1786,7 @@ button,
 }
 @media (max-width: 767px) {
   .modal__item {
-    background-size: 290px 50px;
+    background-size: 100% 50px;
   }
 }
 
@@ -1814,7 +1815,7 @@ button,
 @media (max-width: 767px) {
   .modal__button-submit {
     background-size: 100% 100%;
-    width: 290px;
+    width: 100%;
   }
 }
 .modal__button-submit:hover, .modal__button-submit:focus, .modal__button-submit:focus-visible {

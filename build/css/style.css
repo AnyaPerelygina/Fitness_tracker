@@ -3296,7 +3296,7 @@ input[name="Enter your password"]::placeholder {
 @media (max-width: 1199px) {
   .about__button-prev,
 .about__button-next {
-    padding: 5px;
+    padding: 5px 2px 3px;
   }
 }
 @media (max-width: 767px) {

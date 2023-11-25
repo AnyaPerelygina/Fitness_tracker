@@ -96,12 +96,6 @@
       }
     }
 
-    &:active {
-      &::placeholder {
-        color: $color-default-white;
-      }
-    }
-
     &:disabled {
       opacity: 0.2;
     }

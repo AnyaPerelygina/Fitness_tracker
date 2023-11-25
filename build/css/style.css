@@ -3094,7 +3094,7 @@ input[name="Enter your password"]::placeholder {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.45px;
-  max-width: 510px;
+  max-width: 550px;
   margin: 0 auto;
   padding: 0 15px 60px;
   color: #474a57;
@@ -3142,6 +3142,7 @@ input[name="Enter your password"]::placeholder {
 .about__swiper .swiper-slide {
   position: relative;
   z-index: 10;
+  height: auto;
 }
 
 .about__wrapper {
@@ -3235,6 +3236,9 @@ input[name="Enter your password"]::placeholder {
   letter-spacing: 0.5px;
   margin: 0;
   padding: 0 0 0 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 @media (max-width: 1199px) {
   .about__slide-title {
@@ -3659,7 +3663,17 @@ input[name="Enter your password"]::placeholder {
 }
 
 .feedback__card {
-  max-width: 380px;
+  width: 380px;
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .feedback__card {
+    width: 340px;
+  }
+}
+@media (max-width: 1199px) {
+  .feedback__card {
+    width: 196px;
+  }
 }
 @media (max-width: 767px) {
   .feedback__card {
@@ -4174,7 +4188,7 @@ input[name="Enter your password"]::placeholder {
   line-height: 150%;
   letter-spacing: 0.45px;
   color: #474a57;
-  max-width: 399px;
+  max-width: 423px;
   padding: 0;
   margin: 0 0 50px;
 }

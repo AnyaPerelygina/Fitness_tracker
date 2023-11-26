@@ -62,7 +62,7 @@
     height: 40px;
     padding: 0;
 
-    background-image: url('../img/svg/burger-menu-ellipse.svg');
+    background-image: url("../img/svg/burger-menu-ellipse.svg");
     background-color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
@@ -149,7 +149,7 @@
   &__content {
     position: relative;
 
-    background-image: url('../img/about-card/about-card-yellow.webp');
+    background-image: url("../img/about-card/about-card-yellow.webp");
     background-repeat: no-repeat;
     height: 187px;
     width: 340px;
@@ -166,7 +166,7 @@
 .modal-pricing .modal {
   &__content {
     position: relative;
-    background-image: url('../img/user-form/form-background.webp');
+    background-image: url("../img/user-form/form-background.webp");
     background-repeat: no-repeat;
     height: 548;
     width: 483px;
@@ -185,7 +185,7 @@
 }
 
 .modal__item {
-  background-image: url('../img//user-form/field-1.webp');
+  background-image: url("../img//user-form/field-1.webp");
   border: none;
   background-size: 403px 50px;
   background-repeat: no-repeat;
@@ -254,7 +254,7 @@
   text-align: center;
   border: none;
   background-color: transparent;
-  background-image: url('../img/user-form/user-form-btn.webp');
+  background-image: url("../img/user-form/user-form-btn.webp");
   background-size: 403px 50px;
   width: 403px;
   min-height: 50px;

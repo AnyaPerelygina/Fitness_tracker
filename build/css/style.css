@@ -2185,11 +2185,11 @@ input[name="Enter your password"]::placeholder {
   border: 2px solid #000000;
   background-color: #ffbd12;
 }
-.custom-toggle input:checked + .custom-toggle__icon:hover, .custom-toggle input:checked + .custom-toggle__icon:hover {
+.custom-toggle input:checked + .custom-toggle__icon:hover, .custom-toggle input:checked + .custom-toggle__icon:focus {
   border: 2px solid #474a57;
   background-color: transparent;
 }
-.custom-toggle input:checked + .custom-toggle__icon:hover::before, .custom-toggle input:checked + .custom-toggle__icon:hover::before {
+.custom-toggle input:checked + .custom-toggle__icon:hover::before, .custom-toggle input:checked + .custom-toggle__icon:focus::before {
   background-image: url('data:image/svg+xml,<svg width="35" height="43" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 3.5L3.94737 7L9 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 }
 .custom-toggle input:checked + .custom-toggle__icon:active {
@@ -2777,7 +2777,7 @@ input[name="Enter your password"]::placeholder {
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   .hero__text {
-    padding: 120px 0 120px;
+    padding: 120px 0;
   }
 }
 @media (max-width: 1199px) {
@@ -3973,7 +3973,7 @@ input[name="Enter your password"]::placeholder {
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
-  letter-spacing: 0.625px;
+  letter-spacing: 0.63px;
   text-align: center;
   color: #000000;
   cursor: pointer;
@@ -4396,7 +4396,7 @@ input[name="Enter your password"]::placeholder {
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
-  letter-spacing: 0.625px;
+  letter-spacing: 0.63px;
   border: none;
   background-color: transparent;
   color: #000000;

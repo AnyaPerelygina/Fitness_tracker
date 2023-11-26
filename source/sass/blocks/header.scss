@@ -19,7 +19,7 @@
   display: grid;
   grid-template-columns: 1fr 116px 49px;
   padding: 19px 149px 19px 121px;
-  
+
   @include vp-1199 {
     padding: 19px 60px;
   }

@@ -66,7 +66,7 @@
 
 .pricing__nav {
   position: relative;
-  background-image: url('../img/subscription/tab-subscription.webp');
+  background-image: url("../img/subscription/tab-subscription.webp");
   background-size: 275px 60px;
   background-repeat: no-repeat;
   margin: 0 0 50px;
@@ -92,7 +92,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
-  letter-spacing: 0.625px;
+  letter-spacing: 0.63px;
   text-align: center;
   color: $color-default-black;
   cursor: pointer;
@@ -174,25 +174,25 @@
 
 .pricing__item {
   &--free {
-    background-image: url('../img/subscription/subscription-card-red.webp');
+    background-image: url("../img/subscription/subscription-card-red.webp");
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   &--basic {
-    background-image: url('../img/subscription/subscription-card-green.webp');
+    background-image: url("../img/subscription/subscription-card-green.webp");
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   &--advenced {
-    background-image: url('../img/subscription/subscription-card-purple.webp');
+    background-image: url("../img/subscription/subscription-card-purple.webp");
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   &--mostAdvenced {
-    background-image: url('../img/subscription/subscription-card-yellow.webp');
+    background-image: url("../img/subscription/subscription-card-yellow.webp");
     background-repeat: no-repeat;
     background-size: contain;
   }

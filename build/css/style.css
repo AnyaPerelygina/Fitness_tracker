@@ -4733,15 +4733,6 @@ input[name="Enter your password"]::placeholder {
     height: 49px;
   }
 }
-.btn:hover, .btn:focus, .btn:focus-visible {
-  outline: none;
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
-}
-.btn:active {
-  opacity: 0.9;
-}
 .btn:disabled {
   opacity: 0.2;
 }

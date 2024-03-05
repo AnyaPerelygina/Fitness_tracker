@@ -175,11 +175,11 @@
                 Subscribe to&nbsp;the&nbsp;company's news and&nbsp;receive a&nbsp;promo code by&nbsp;email. 
                 The&nbsp;promo code is&nbsp;valid for&nbsp;the&nbsp;first purchase of&nbsp;a&nbsp;subscription.
               </p>
-              <div class="subscription__form form" >
+              <div class="subscription__form form" data-form-validate="data-form-validate" data-callback="base">
                 <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" novalidate>
-                  <div class="form__email" data-validate-type="email" data-required data-email-length="18">
+                  <div class="form__email" data-validate-type="email" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
                     <label class="visually-hidden">Email</label>
-                    <input placeholder="Email" type="email" name="email" aria-invalid="true" required>
+                    <input placeholder="Email" type="email" name="email" autocomplete="off" required>
                   </div>
                   <button class="form__button" type="submit">Let’s&nbsp;GO!</button>
                 </form>

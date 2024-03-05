@@ -88,6 +88,16 @@
   &:disabled {
     opacity: 0.2;
   }
+
+  &.is-invalid {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      padding: 5px 0 0 0;
+      color: $color-error;
+    }
+  }
 }
 
 .form__button {

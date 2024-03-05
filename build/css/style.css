@@ -3591,6 +3591,11 @@ input[name="Enter your password"]::placeholder {
   padding: 5px 0 0 0;
   color: #ff8989;
 }
+@media (max-width: 767px) {
+  .form__email.is-invalid span {
+    padding: 5px 0 0 20px;
+  }
+}
 
 .form__button {
   font-family: "Montserrat", "Arial", sans-serif;

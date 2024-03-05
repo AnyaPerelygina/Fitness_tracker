@@ -1524,6 +1524,31 @@ button,
   }
 }
 
+.intro {
+  width: 100%;
+  color: #ffffff;
+}
+.intro .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 20px;
+}
+.intro h1 {
+  line-height: normal;
+}
+.intro p {
+  margin: 0;
+}
+.intro a {
+  color: #ffffff;
+  cursor: pointer;
+}
+
 .modal {
   position: fixed;
   top: 0;

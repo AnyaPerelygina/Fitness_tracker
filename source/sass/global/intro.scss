@@ -1,0 +1,23 @@
+.intro {
+  width: 100%;
+  color: $color-default-white;
+
+  .container {
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+  }
+
+  h1 {
+    line-height: normal;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: $color-default-white;
+    cursor: pointer;
+  }
+}

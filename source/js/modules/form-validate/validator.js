@@ -194,15 +194,15 @@ export class Validator {
       this._setItemInvalidState(parent, input);
       flag = false;
     } else if (input.value.length < input.minLength) {
-      parent.dataset.messageBase = `Осталось ввести ещё ${input.minLength - input.value.length} символов`;
+      parent.dataset.messageBase = `&ndash; There are ${input.minLength - input.value.length} more characters left to enter.`;
       this._setItemInvalidState(parent, input);
       flag = false;
     } else if (input.value.length > input.minLength) {
-      parent.dataset.messageBase = `Вы ввели ${input.value.length - input.minLength} лишних символов`;
+      parent.dataset.messageBase = `&ndash; You entered ${input.value.length - input.minLength} extra characters`;
       this._setItemInvalidState(parent, input);
       flag = false;
     } else {
-      parent.dataset.messageSuccess = 'Поле заполнено корректно';
+      parent.dataset.messageSuccess = '&ndash; The field is filled in correctly.';
       this._setItemValidState(parent, input);
       flag = true;
     }

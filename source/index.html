@@ -360,24 +360,24 @@
                   <button class="sign-in__button tabs__control" data-tabs="control">Log&nbsp;in</button>
                 </div>
                 <div class="sign-in__content tabs__content" data-tabs="content">
-                  <div class="sign-in__list tabs__element" data-tabs="element">
+                  <div class="sign-in__list tabs__element" data-tabs="element" data-form-validate="data-form-validate" data-callback="base">
                     <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" novalidate>
-                      <div class="sign-in__item custom-input custom-input--primary" data-validate-type="text" data-limitation="name" data-required>
+                      <div class="sign-in__item custom-input custom-input--primary" data-validate-type="text" data-limitation="cyrillic" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
                         <label>
                           <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;name</span>
                           <input type="text" name="name" placeholder="Your name" pattern="^[а-яА-ЯёЁa-zA-Z\-]+$" required>
                         </label>
                       </div>
-                      <div class="custom-input sign-in__item custom-input--primary" data-validate-type="email" data-required data-email-length="18">
+                      <div class="custom-input sign-in__item custom-input--primary" data-validate-type="email" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
                         <label>
                           <span class="custom-input__label custom-input__label--primary visually-hidden">Email</span>
                           <input placeholder="fitnesstracker@mail.com" type="email" name="user-email" aria-invalid="true" required>
                         </label>
                       </div>
-                      <div class="custom-input sign-in__item custom-input--primary" data-validate-type="password" data-required data-password-length="8">
+                      <div class="custom-input sign-in__item custom-input--primary" data-validate-type="custom-example" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
                         <label>
                           <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;password</span>
-                          <input placeholder="Create your password" type="password" name="password" pattern="[0-9a-fA-F]{4,8}" maxlength="8" required>
+                          <input placeholder="Create your password" type="password" name="password" pattern="[0-9a-fA-F]{4,8}" minlength="8" maxlength="8" size="8" autocomplete="new-password" required>
                         </label>
                       </div>
                       <div class="custom-select sign-in__select custom-select--primary" data-select data-validate-type="select" data-name="tariff__plan" data-id="tariff__plan" data-required>
@@ -403,7 +403,7 @@
                       <button class="sign-in__button-submit" type="submit">Sign&nbsp;in</button>
                     </form>
                   </div>
-                  <div class="log-in tabs__element" data-tabs="element">
+                  <div class="log-in tabs__element" data-tabs="element" data-form-validate="data-form-validate" data-callback="base">
                     <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" novalidate>
                       <div class="sign-in__item custom-input custom-input--primary" data-validate-type="email" data-required data-email-length="18">
                         <label>
@@ -482,24 +482,24 @@
         <div class="modal__content">
           <div>
             <h2 class="modal__title">Sign&nbsp;in!</h2>
-            <div class="modal__sign-in">
+            <div class="modal__sign-in" data-form-validate="data-form-validate" data-callback="base">
               <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" novalidate>
-                <div class="modal__item custom-input custom-input--primary" data-validate-type="text" data-limitation="name" data-required>
+                <div class="modal__item custom-input custom-input--primary" data-validate-type="text" data-limitation="cyrillic" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
                   <label>
                     <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;name</span>
                     <input type="text" name="name" placeholder="Your name" pattern="^[а-яА-ЯёЁa-zA-Z\-]+$" required>
                   </label>
                 </div>
-                <div class="custom-input modal__item custom-input--primary" data-validate-type="email" data-required data-email-length="18">
+                <div class="custom-input modal__item custom-input--primary" data-validate-type="email" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
                   <label>
                     <span class="custom-input__label custom-input__label--primary visually-hidden">Email</span>
                     <input placeholder="fitnesstracker@mail.com" type="email" name="user-email" aria-invalid="true" required>
                   </label>
                 </div>
-                <div class="custom-input modal__item custom-input--primary" data-validate-type="password" data-required data-password-length="8">
+                <div class="custom-input modal__item custom-input--primary" data-validate-type="custom-example" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
                   <label>
                     <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;password</span>
-                    <input placeholder="Create your password" type="password" name="password" pattern="[0-9a-fA-F]{4,8}" maxlength="8" required>
+                    <input placeholder="Create your password" type="password" name="password" pattern="[0-9a-fA-F]{4,8}" minlength="8" maxlength="8" size="8" autocomplete="new-password" required>
                   </label>
                 </div>
                 <div class="custom-select modal__item custom-select--primary" data-select data-validate-type="select" data-name="tariff__plan" data-id="tariff__plan" data-required>

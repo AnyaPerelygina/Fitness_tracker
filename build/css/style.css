@@ -1713,8 +1713,10 @@ button,
 .modal-pricing .modal__content {
   position: relative;
   background-image: url("../img/user-form/form-background.webp");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 548;
+  min-height: 548px;
+  height: auto;
   width: 483px;
   padding: 40px 40px 44px;
 }
@@ -1891,6 +1893,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 403px;
   padding: 0;
 }
@@ -1961,6 +1967,7 @@ button,
   right: 0;
   bottom: 35px;
   color: #ff1553;
+  padding: 5px 20px;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -1971,35 +1978,10 @@ button,
     bottom: 20px;
   }
 }
-.custom-input.is-invalid input,
-.custom-input.is-invalid textarea,
-.custom-textarea.is-invalid input,
-.custom-textarea.is-invalid textarea {
-  border: 2px dotted #ff1553;
-}
-.custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
-.custom-input.is-invalid textarea:focus,
-.custom-input.is-invalid textarea:hover,
-.custom-textarea.is-invalid input:focus,
-.custom-textarea.is-invalid input:hover,
-.custom-textarea.is-invalid textarea:focus,
-.custom-textarea.is-invalid textarea:hover {
-  border: 2px dotted rgba(255, 21, 83, 0.5);
-}
-.custom-input.is-valid input,
-.custom-textarea.is-valid input {
-  border: 2px dotted #22b259;
-}
-.custom-input.is-valid input:focus, .custom-input.is-valid input:hover,
-.custom-textarea.is-valid input:focus,
-.custom-textarea.is-valid input:hover {
-  border: 2px dotted rgba(34, 178, 89, 0.5);
-}
 .custom-input .input-message,
 .custom-textarea .input-message {
-  position: absolute;
-  right: 0;
   bottom: -5px;
+  margin: 0 0 10px 0;
 }
 .custom-input .input-message.is-invalid,
 .custom-textarea .input-message.is-invalid {
@@ -2386,7 +2368,7 @@ input[name="Enter your password"]::placeholder {
 }
 @media (max-width: 767px) {
   .custom-select__item {
-    padding: 10px;
+    padding: 10px 10px 10px 16px;
   }
 }
 .custom-select__item[aria-selected=true] {
@@ -2418,18 +2400,34 @@ input[name="Enter your password"]::placeholder {
   transition: opacity 0.1s ease;
 }
 .custom-select__text {
-  font-size: 20px;
-  line-height: 24px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 145.4%;
+  letter-spacing: 0.5px;
+  color: #000000;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 80%;
   overflow: hidden;
+  padding: 0 0 0 10px;
   text-align: left;
   white-space: nowrap;
   text-overflow: ellipsis;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease 0.1s;
   transition: opacity 0.3s ease 0.1s;
+}
+@media (max-width: 1199px) {
+  .custom-select__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .custom-select__text {
+    padding: 0 0 5px 16px;
+  }
 }
 .custom-select__text br {
   display: none;
@@ -2484,12 +2482,6 @@ input[name="Enter your password"]::placeholder {
 }
 .custom-select.is-invalid .custom-select__error {
   opacity: 1;
-}
-.custom-select.is-invalid .custom-select__button {
-  border: 2px solid #ff1553;
-}
-.custom-select.is-invalid .custom-select__button:focus, .custom-select.is-invalid .custom-select__button:hover {
-  border: 2px solid rgba(255, 21, 83, 0.5);
 }
 .custom-select--placeholder .custom-select__label {
   -webkit-transform: translateY(calc(-50% - 40px));
@@ -4384,24 +4376,26 @@ input[name="Enter your password"]::placeholder {
 
 .sign-in {
   background-image: url("../img/user-form/form-background.webp");
-  background-size: contain;
+  background-size: 85% 100%;
   background-repeat: no-repeat;
-  height: 548px;
+  min-height: 548px;
+  height: auto;
   width: 584px;
   padding: 40px 40px 44px;
 }
 @media (max-width: 1199px) {
   .sign-in {
     width: 483px;
+    background-size: 100% 100%;
   }
 }
 @media (max-width: 767px) {
   .sign-in {
     background-image: none;
+    min-height: 330px;
     width: 100%;
     padding: 30px 0 0 0;
     border-top: 2px solid #fa6648;
-    height: auto;
   }
 }
 
@@ -4455,7 +4449,7 @@ input[name="Enter your password"]::placeholder {
     font-size: 20px;
   }
 }
-.sign-in__button:hover, .sign-in__buttonfocus, .sign-in__button:focus-visible {
+.sign-in__button:hover, .sign-in__button:focus, .sign-in__button:focus-visible {
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05);

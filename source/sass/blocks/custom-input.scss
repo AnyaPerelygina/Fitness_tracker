@@ -2,6 +2,7 @@
 .custom-textarea {
   position: relative;
   display: flex;
+  flex-direction: column;
   width: 403px;
   padding: 0;
 
@@ -53,6 +54,7 @@
     bottom: 35px;
 
     color: #ff1553;
+    padding: 5px 20px;
 
     opacity: 0;
 
@@ -63,33 +65,9 @@
     }
   }
 
-  &.is-invalid {
-    input,
-    textarea {
-      border: 2px dotted #ff1553;
-
-      &:focus,
-      &:hover {
-        border: 2px dotted rgba(#ff1553, 0.5);
-      }
-    }
-  }
-
-  &.is-valid {
-    input {
-      border: 2px dotted #22b259;
-
-      &:focus,
-      &:hover {
-        border: 2px dotted rgba(#22b259, 0.5);
-      }
-    }
-  }
-
   .input-message {
-    position: absolute;
-    right: 0;
     bottom: -5px;
+    margin: 0 0 10px 0;
 
     &.is-invalid {
       color: #ff0000;

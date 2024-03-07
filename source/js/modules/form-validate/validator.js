@@ -190,7 +190,7 @@ export class Validator {
   _customExample(parent, input) {
     let flag = true;
     if (!input.value.length) {
-      parent.dataset.messageBase = 'Поле обязательно к заполнению';
+      parent.dataset.messageBase = '&ndash; This field is required!';
       this._setItemInvalidState(parent, input);
       flag = false;
     } else if (input.value.length < input.minLength) {

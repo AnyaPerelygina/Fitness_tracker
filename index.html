@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The best fitness tracker">
+    <title>Fitness tracker</title>
+    <link rel="preload" href="fonts/PermanentMarker-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="icon" href="favicon/favicon.ico">
+    <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__wrapper container">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 320px)" srcset="img/logotype.webp">
+              <img src="img/logotype.png" width="52" height="52" alt="Logotype Fitness tracker.">
+            </picture>
+          </a>
+          <ul class="header__social social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#" aria-label="Facebook.">
+                <svg class="social-list__icon" width="8" height="15" aria-hidden="true" focusable="false">
+                  <use href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#" aria-label="Linkedin.">
+                <svg class="social-list__icon" width="16" height="16" aria-hidden="true" focusable="false">
+                  <use href="img/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#" aria-label="Coogle.">
+                <svg class="social-list__icon" width="14" height="14" aria-hidden="true" focusable="false">
+                  <use href="img/sprite.svg#google"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button class="header__toggle toggle" type="button" aria-label="Menu.">
+            <svg class="toggle__opened" width="24" height="24" aria-hidden="true" focusable="false">
+              <use href="img/sprite.svg#menu"></use>
+            </svg>
+            <svg class="toggle__closed" width="20" height="20" aria-hidden="true" focusable="false">
+              <use href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#about">About</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#pricing">Price</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Manual</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#feedback">Feedback</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="hero__wrapper container">
+            <div class="hero__text">
+              <h1 class="hero__title">The best<br> fitness tracker!</h1>
+              <p>You&nbsp;don’t need to&nbsp;buy an&nbsp;expensive gadget to&nbsp;count your&nbsp;steps and&nbsp;find out how many calories you are losing - just download the&nbsp;app to&nbsp;your&nbsp;phone!</p>
+              <div class="hero__buttons">
+                <button class="hero__button hero__button--left btn" type="button" aria-label="Download app.">
+                  <svg class="hero__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#shape"></use>
+                  </svg>
+                  <span>Download</span>
+                </button>
+                <button class="hero__button hero__button--right btn" type="button" aria-label="Download app.">
+                  <svg class="hero__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#play-market"></use>
+                  </svg>
+                  <span>Download</span>
+                </button>
+              </div>
+            </div>
+            <div class="hero__img">
+              <picture>
+                <source media="(min-width: 320px)" srcset="img/app-hero.webp">
+                <img src="img/app-hero.png" width="992" height="952" alt="Prototype Fitness tracker.">
+              </picture>
+            </div>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="about__container">
+            <h2 class="about__title title">About&nbsp;us</h2>
+            <p>One of&nbsp;the&nbsp;advantages of&nbsp;the&nbsp;application - simplicity. You&nbsp;start app, put your&nbsp;phone in&nbsp;your&nbsp;pocket and&nbsp;forget about&nbsp;it.</p>
+            <div class="about__swiper swiper">
+              <div class="about__wrapper swiper-wrapper">
+                <div class="about__slide about__slide--1 swiper-slide">
+                  <svg class="about__slide-icon" width="88" height="73" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#mountains-card"></use>
+                  </svg>
+                  <h3 class="about__slide-title">Ease of use</h3>
+                  <p>A simple interface and minimum of&nbsp;settings! It's&nbsp;so&nbsp;simple!</p>
+                </div>
+                <div class="about__slide about__slide--2 swiper-slide">
+                  <svg class="about__slide-icon" width="88" height="73" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#mountains-card"></use>
+                  </svg>
+                  <h3 class="about__slide-title">Workout</h3>
+                  <p>The app has different types of recorded workouts. Choose yours!</p>
+                </div>
+                <div class="about__slide about__slide--3 swiper-slide">
+                  <svg class="about__slide-icon" width="88" height="73" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#mountains-card"></use>
+                  </svg>
+                  <h3 class="about__slide-title">You can choose your program language</h3>
+                  <p>English, French, or&nbsp;maybe Russian? Select your&nbsp;language.</p>
+                </div>
+                <div class="about__slide about__slide--4 swiper-slide">
+                  <svg class="about__slide-icon" width="88" height="73" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#mountains-card"></use>
+                  </svg>
+                  <h3 class="about__slide-title">Different difficulty levels</h3>
+                  <p>Choose your&nbsp;level: easy, middle, advanced or&nbsp;professional.</p>
+                </div>
+                <div class="about__slide about__slide--5 swiper-slide">
+                  <svg class="about__slide-icon" width="88" height="73" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#mountains-card"></use>
+                  </svg>
+                  <h3 class="about__slide-title">Free subscription</h3>
+                  <p>There is a&nbsp;free subscription with&nbsp;limited functionality.</p>
+                </div>
+                <div class="about__slide about__slide--6 swiper-slide">
+                  <svg class="about__slide-icon" width="88" height="73" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#mountains-card"></use>
+                  </svg>
+                  <h3 class="about__slide-title">Safety</h3>
+                  <p>Your confidential data is&nbsp;reliably protected by&nbsp;our team!</p>
+                </div>
+              </div>
+            </div>
+            <div class="about__button">
+              <button class="about__button-prev">
+                <svg class="about__button-icon" width="30" height="30" aria-hidden="true" focusable="false">
+                  <use href="img/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button class="about__button-next">
+                <svg class="about__button-icon" width="30" height="30" aria-hidden="true" focusable="false">
+                  <use href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="subscription">
+          <div class="subscription__wrapper container">
+            <div class="subscription__text">
+              <h2 class="subscription__title title">Subscribe to&nbsp;the&nbsp;news now and&nbsp;get a&nbsp;bonus!</h2>
+              <p>
+                Subscribe to&nbsp;the&nbsp;company's news and&nbsp;receive a&nbsp;promo code by&nbsp;email. 
+                The&nbsp;promo code is&nbsp;valid for&nbsp;the&nbsp;first purchase of&nbsp;a&nbsp;subscription.
+              </p>
+              <div class="subscription__form form" data-form-validate="data-form-validate" data-callback="base">
+                <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" novalidate>
+                  <div class="form__email" data-validate-type="email" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
+                    <label class="visually-hidden">Email</label>
+                    <input placeholder="Email" type="email" name="email" autocomplete="off" required>
+                  </div>
+                  <button class="form__button" type="submit">Let’s&nbsp;GO!</button>
+                </form>
+              </div>
+            </div>
+            <div class="subscription__img">
+              <picture>
+                <source media="(min-width: 320px)" srcset="img/watch.webp">
+                <img src="img/watch.png" width="452" height="528" alt="Prototype Fitness tracker on fitnesswatch.">
+              </picture>
+            </div>
+          </div>
+        </section>
+        <section class="feedback" id="feedback">
+          <div class="feedback__wrapper container">
+            <h2 class="feedback__title title">Stories of our users</h2>
+            <div class="feedback__list">
+              <a class="feedback__card" href="#">
+                <picture>
+                  <source media="(min-width: 320px)" srcset="img/stories-card/stories-card-green.webp">
+                  <img src="img/stories-card/stories-card-green.webp" width="380" height="265" alt="Сover card.">
+                </picture>
+                <h3 class="feedback__card-title">Stories of Ana</h3>
+                <p>This is&nbsp;the&nbsp;best app I&nbsp;have ever used! It's&nbsp;so&nbsp;simple!</p>
+                <span>11.10.23</span>
+              </a>
+              <a class="feedback__card" href="#">
+                <picture>
+                  <source media="(min-width: 320px)" srcset="img/stories-card/stories-card-purple.webp">
+                  <img src="img/stories-card/stories-card-green.webp" width="380" height="265" alt="Сover card.">
+                </picture>
+                <h3 class="feedback__card-title">Stories of Mark</h3>
+                <p>I downloaded it&nbsp;for&nbsp;my&nbsp;grandma and now we&nbsp;compete in&nbsp;activity!</p>
+                <span>04.11.23</span>
+              </a>
+              <a class="feedback__card" href="#">
+                <picture>
+                  <source media="(min-width: 320px)" srcset="img/stories-card/stories-card-green.webp">
+                  <img src="img/stories-card/stories-card-green.webp" width="380" height="265" alt="Сover card.">
+                </picture>
+                <h3 class="feedback__card-title">Stories of Daniel</h3>
+                <p>With the&nbsp;app, my&nbsp;life has changed 360 degrees!</p>
+                <span>25.11.23</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="pricing" id="pricing">
+          <div class="pricing__wrapper container">
+            <p>We have selected the best payment solutions for&nbsp;you.</p>
+            <h2 class="pricing__title title">Choose your&nbsp;tariff plan</h2>
+            <div class="pricing__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
+              <div class="pricing__nav tabs__controls" data-tabs="controls">
+                <button class="pricing__button tabs__control is-active" data-tabs="control">Month</button>
+                <button class="pricing__button tabs__control" data-tabs="control">Years</button>
+              </div>
+              <div class="pricing__content tabs__content" data-tabs="content">
+                <ul class="pricing__list tabs__element" data-tabs="element">
+                  <li class="pricing__item pricing__item--free card">
+                    <h3>Free Plan</h3>
+                    <span data-parent="$0 mounth">$0 /month</span>
+                    <ul class="card__list">
+                      <li class="card__item">2 indicators</li>
+                      <li class="card__item">Free share</li>
+                      <li class="card__item">5 workouts</li>
+                      <li class="card__item">Chat support</li>
+                    </ul>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
+                  </li>
+                  <li class="pricing__item pricing__item--basic card">
+                    <h3>Basic</h3>
+                    <span data-parent="$5 mounth">$5 /month</span>
+                    <ul class="card__list">
+                      <li class="card__item">5 indicators</li>
+                      <li class="card__item">Free share</li>
+                      <li class="card__item">10 workouts</li>
+                      <li class="card__item">Chat support</li>
+                    </ul>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
+                  </li>
+                  <li class="pricing__item pricing__item--advenced card">
+                    <h3>Advenced</h3>
+                    <span data-parent="$9 mounth">$9 /month</span>
+                    <ul class="card__list">
+                      <li class="card__item">10 indicators</li>
+                      <li class="card__item">Free share</li>
+                      <li class="card__item">20 workouts</li>
+                      <li class="card__item">Chat + Email support</li>
+                    </ul>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
+                  </li>
+                  <li class="pricing__item pricing__item--mostAdvenced card">
+                    <h3>Most Advanced</h3>
+                    <span data-parent="$12 mounth">$12 /month</span>
+                    <ul class="card__list">
+                      <li class="card__item">Unlim indicators</li>
+                      <li class="card__item">Free share</li>
+                      <li class="card__item">Unlim workouts</li>
+                      <li class="card__item">Personal Manager</li>
+                    </ul>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
+                  </li>
+                </ul>
+                <ul class="pricing__list tabs__element" data-tabs="element">
+                  <li class="pricing__item pricing__item--free card">
+                    <h3>Free Plan</h3>
+                    <span data-parent="$0 years">$0 /year</span>
+                    <ul class="card__list">
+                      <li class="card__item">2 indicators</li>
+                      <li class="card__item">Free share</li>
+                      <li class="card__item">5 workouts</li>
+                      <li class="card__item">Chat support</li>
+                    </ul>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
+                  </li>
+                  <li class="pricing__item pricing__item--basic card">
+                    <h3>Basic</h3>
+                    <span data-parent="$55 years">$55 /year</span>
+                    <ul class="card__list">
+                      <li class="card__item">5 indicators</li>
+                      <li class="card__item">Free share</li>
+                      <li class="card__item">10 workouts</li>
+                      <li class="card__item">Chat support</li>
+                    </ul>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
+                  </li>
+                  <li class="pricing__item pricing__item--advenced card">
+                    <h3>Advenced</h3>
+                    <span data-parent="$99 years">$99 /year</span>
+                    <ul class="card__list">
+                      <li class="card__item">10 indicators</li>
+                      <li class="card__item">Free share</li>
+                      <li class="card__item">20 workouts</li>
+                      <li class="card__item">Chat + Email support</li>
+                    </ul>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
+                  </li>
+                  <li class="pricing__item pricing__item--mostAdvenced card">
+                    <h3>Most Advanced</h3>
+                    <span data-parent="$130 years">$130 /year</span>
+                    <ul class="card__list">
+                      <li class="card__item">Unlim indicators</li>
+                      <li class="card__item">Free share</li>
+                      <li class="card__item">Unlim workouts</li>
+                      <li class="card__item">Personal Manager</li>
+                    </ul>
+                    <button class="card__button" type="button" data-open-modal="pricing">Get started</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="double-block">
+          <div class="double-block__wrapper container">
+            <div class="bonus">
+              <h2 class="bonus__title title">Start training already on your&nbsp;watch!</h2>
+              <p>Synchronize your fitness watch with the&nbsp;app and you will always be&nbsp;aware of&nbsp;your&nbsp;activity! It's never been so&nbsp;easy!</p>
+              <div class="bonus__buttons">
+                <button class="bonus__button bonus__button--left btn" type="button" aria-label="Download app.">
+                  <svg width="25" height="25" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#shape"></use>
+                  </svg>
+                  <span>Download</span>
+                </button>
+                <button class="bonus__button bonus__button--right btn" type="button" aria-label="Download app.">
+                  <svg width="25" height="25" aria-hidden="true" focusable="false">
+                    <use href="img/sprite.svg#play-market"></use>
+                  </svg>
+                  <span>Download</span>
+                </button>
+              </div>
+            </div>
+            <div class="sign-in">
+              <div class="sign-in__tabs tabs no-transition-global" data-tabs="parent" data-delay="500">
+                <div class="sign-in__nav tabs__controls" data-tabs="controls">
+                  <button class="sign-in__button tabs__control is-active" data-tabs="control">Sign&nbsp;in</button>
+                  <button class="sign-in__button tabs__control" data-tabs="control">Log&nbsp;in</button>
+                </div>
+                <div class="sign-in__content tabs__content" data-tabs="content">
+                  <div class="sign-in__list tabs__element" data-tabs="element" data-form-validate="data-form-validate" data-callback="base">
+                    <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" novalidate>
+                      <div class="sign-in__item custom-input custom-input--primary" data-validate-type="text" data-limitation="cyrillic" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
+                        <label>
+                          <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;name</span>
+                          <input type="text" name="name" placeholder="Your name" pattern="^[а-яА-ЯёЁa-zA-Z\-]+$" required>
+                        </label>
+                      </div>
+                      <div class="custom-input sign-in__item custom-input--primary" data-validate-type="email" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
+                        <label>
+                          <span class="custom-input__label custom-input__label--primary visually-hidden">Email</span>
+                          <input placeholder="fitnesstracker@mail.com" type="email" name="user-email" aria-invalid="true" required>
+                        </label>
+                      </div>
+                      <div class="custom-input sign-in__item custom-input--primary" data-validate-type="custom-example" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
+                        <label>
+                          <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;password</span>
+                          <input placeholder="Create your password" type="password" name="password" pattern="[0-9a-fA-F]{4,8}" minlength="8" maxlength="8" size="8" autocomplete="new-password" required>
+                        </label>
+                      </div>
+                      <div class="custom-select sign-in__select custom-select--primary" data-select data-validate-type="select" data-name="tariff__plan" data-id="tariff__plan" data-required>
+                        <span class="custom-select__label custom-select__label--primary">Select tariff plan</span>
+                        <button class="custom-select__button custom-select__button--primary" type="button" aria-label="Select one of the options">
+                          <span class="custom-select__text"></span>
+                          <span class="custom-select__icon custom-select__icon--primary"></span>
+                        </button>
+                        <ul class="custom-select__list custom-select__list--primary" role="listbox">
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Free plan</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Basic</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Advanced</li>
+                          <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Most Advanced</li>
+                        </ul>
+                      </div>
+                      <div class="custom-toggle custom-toggle--primary custom-toggle--checkbox" data-validate-type="checkbox" data-required>
+                        <label>
+                          <input type="checkbox" value="user-agreement" name="user-agreement" checked>
+                          <span class="custom-toggle__icon custom-toggle__icon--primary"></span>
+                          <span class="custom-toggle__label">I agree to&nbsp;the&nbsp;processing of&nbsp;personal data</span>
+                        </label>
+                      </div>
+                      <button class="sign-in__button-submit" type="submit">Sign&nbsp;in</button>
+                    </form>
+                  </div>
+                  <div class="log-in tabs__element" data-tabs="element" data-form-validate="data-form-validate" data-callback="base">
+                    <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" novalidate>
+                      <div class="sign-in__item custom-input custom-input--primary" data-validate-type="email" data-required data-email-length="18">
+                        <label>
+                          <span class="custom-input__label custom-input__label--primary visually-hidden">Enter your&nbsp;email</span>
+                          <input type="email" name="Enter your email" placeholder="Enter your email" required>
+                        </label>
+                      </div>
+                      <div class="sign-in__item custom-input custom-input--primary" data-validate-type="password" data-required data-password-length="8">
+                        <label>
+                          <span class="custom-input__label custom-input__label--primary visually-hidden">Enter your&nbsp;password</span>
+                          <input type="password" name="Enter your password" placeholder="Enter your password" required>
+                        </label>
+                      </div>
+                      <button class="sign-in__button-submit" type="submit" name="Log-in">Log&nbsp;in</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper container">
+          <a class="footer__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 320px)" srcset="img/logotype.webp">
+              <img src="img/logotype.png" width="52" height="52" alt="Logotype Fitness tracker.">
+            </picture>
+          </a>
+          <ul class="footer__nav">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#about">About</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Manual</a>
+            </li>
+          </ul>
+          <div class="footer__buttons">
+            <button class="footer__button footer__button--left btn" type="button" aria-label="Download app.">
+              <svg class="footer__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#shape"></use>
+              </svg>
+              <span>Download</span>
+            </button>
+            <button class="footer__button footer__button--right btn" type="button" aria-label="Download app.">
+              <svg class="footer__button-icon" width="25" height="25" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#play-market"></use>
+              </svg>
+              <span>Download</span>
+            </button>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal modal--preload modal-subscription" data-modal="subscription">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p>Check your email!</p>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--preload modal-pricing" data-modal="pricing">
+      <div class="modal__wrapper modal__wrapper--pricing">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <div>
+            <h2 class="modal__title">Sign&nbsp;in!</h2>
+            <div class="modal__sign-in" data-form-validate="data-form-validate" data-callback="base">
+              <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" novalidate>
+                <div class="modal__item custom-input custom-input--primary" data-validate-type="text" data-limitation="cyrillic" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
+                  <label>
+                    <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;name</span>
+                    <input type="text" name="name" placeholder="Your name" pattern="^[а-яА-ЯёЁa-zA-Z\-]+$" required>
+                  </label>
+                </div>
+                <div class="custom-input modal__item custom-input--primary" data-validate-type="email" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
+                  <label>
+                    <span class="custom-input__label custom-input__label--primary visually-hidden">Email</span>
+                    <input placeholder="fitnesstracker@mail.com" type="email" name="user-email" aria-invalid="true" required>
+                  </label>
+                </div>
+                <div class="custom-input modal__item custom-input--primary" data-validate-type="custom-example" data-message-base="&ndash; This field is required!" data-message-extra="&ndash; Incorrect!" data-required="data-required">
+                  <label>
+                    <span class="custom-input__label custom-input__label--primary visually-hidden">Your&nbsp;password</span>
+                    <input placeholder="Create your password" type="text" name="password" pattern="[0-9a-fA-F]{4,8}" minlength="8" maxlength="8" size="8" autocomplete="new-password" required>
+                  </label>
+                </div>
+                <div class="custom-select modal__item custom-select--primary" data-select data-validate-type="select" data-name="tariff__plan" data-id="tariff__plan" data-required>
+                  <span class="custom-select__label custom-select__label--primary">Select tariff plan</span>
+                  <button class="custom-select__button custom-select__button--primary" type="button" aria-label="Select one of the options">
+                    <span class="custom-select__text"></span>
+                    <span class="custom-select__icon custom-select__icon--primary"></span>
+                  </button>
+                  <ul class="custom-select__list custom-select__list--primary" role="listbox">
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">Free plan</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Basic</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Advanced</li>
+                    <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Most Advanced</li>
+                  </ul>
+                </div>
+                <div class="custom-toggle custom-toggle--primary custom-toggle--checkbox" data-validate-type="checkbox" data-required>
+                  <label>
+                    <input type="checkbox" value="user-agreement" name="user-agreement" checked>
+                    <span class="custom-toggle__icon custom-toggle__icon--primary"></span>
+                    <span class="custom-toggle__label">I agree to&nbsp;the&nbsp;processing of&nbsp;personal data</span>
+                  </label>
+                </div>
+                <button class="modal__button-submit" type="submit">Sign in</button>
+              </form>
+            </div>
+          </div>
+          <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
